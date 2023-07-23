@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: "https://jacobjanashvili.github.io/bgs/",
+  base: "/jacobjanashvili.github.io/bgs/",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
