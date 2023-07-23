@@ -10,7 +10,7 @@ import Footer from "@/components/Footer.vue";
   <main>
     <div class="motivator_wrapper">
       <div class="card">
-        <img class="card_img" src="src/components/pictures/sacace.png" alt="">
+        <img class="card_img" src="../assets/sacace.png" alt="">
         <div class="card_content">
           <h1 class="card_title">საკაცე</h1>
           <div class="card_test_wrapper">
@@ -24,7 +24,7 @@ import Footer from "@/components/Footer.vue";
         </div>
       </div>
       <div class="card">
-        <img class="card_img" src="src/components/pictures/sacace.png" alt="">
+        <img class="card_img" src="../assets/sacace.png" alt="">
         <div class="card_content">
           <h1 class="card_title">ენტროჯენი</h1>
           <div class="card_test_wrapper">
@@ -36,19 +36,19 @@ import Footer from "@/components/Footer.vue";
         </div>
       </div>
     </div>
-    <img class="funnel_img" src="src/components/pictures/sixreasons-geo.png" alt="">
+    <img class="funnel_img" src="../assets/sixreasons-geo.png" alt="">
     <div class="certificate_wrapper">
       <h2 class="certificate_title">სერტიფიკატები</h2>
       <div class="certificate_subwrapper">
-        <img src="src/components/pictures/CERT_2022_8315_ENG_22%201@1x.png" alt="">
-        <img src="src/components/pictures/CERT_2022_8315_ENG_22%201@1x.png" alt="">
-        <img src="src/components/pictures/CERT_2022_8315_ENG_22%201@1x.png" alt="">
-        <img src="src/components/pictures/CERT_2022_8315_ENG_22%201@1x.png" alt="">
+        <img src="@/assets/CERT_2022.png" alt="">
+        <img src="@/assets/CERT_2022.png" alt="">
+        <img src="@/assets/CERT_2022.png" alt="">
+        <img src="@/assets/CERT_2022.png" alt="">
       </div>
     </div>
     <div class="catalog">
       <div class="catalog_wrapper">
-        <img src="src/components/icons/catalog_logo.png" alt="">
+        <img src="../assets/catalog_logo.png" alt="">
         <div class="catalog_download_wrapper">
           <h1>კატალოგის გადმოწერა</h1>
           <a href="https://sacace.com/attache/file/catalogue.pdf" download="catalogue">

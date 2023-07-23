@@ -86,7 +86,7 @@ const handleVirusClick = (virus) => {
   </div>
   <div class="catalog">
     <div class="catalog_wrapper">
-      <img src="src/components/icons/catalog_logo.png" alt="">
+      <img src="../assets/catalog_logo.png" alt="">
       <div class="catalog_download_wrapper">
         <h1>კატალოგის გადმოწერა</h1>
         <Button label="გადმოწერა" severity="help" outlined />
@@ -103,7 +103,7 @@ const handleVirusClick = (virus) => {
 }
 
 .sacace_header{
-  background: url("/src/components/pictures/homebcg.png") no-repeat center;
+  background: url("/src/assets/homebcg.png") no-repeat center;
   width: 100%;
   height: 40vh;
   -webkit-background-size: cover;

@@ -73,13 +73,13 @@ const items = ref([
     <Menubar :model="items" class="p-menubar" :class="{'scrolled': scrolled}" @click="handleMenuItemClick">
       <template #start>
         <router-link to="/" >
-          <img src="src/assets/logo.svg" alt="">
+          <img src="../assets/logo.svg" alt="">
         </router-link>
       </template>
       <template #end>
         <div class="contact_wrapper">
           <div class="contact_sub_wrapper">
-            <img src="icons/phone.svg" alt="">
+            <img src="../assets/phone.svg" alt="">
             <p>(+995) 598-824-818</p>
           </div>
           <div class="divider"></div>

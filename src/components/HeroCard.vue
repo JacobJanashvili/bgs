@@ -32,7 +32,7 @@ import Button from 'primevue/button';
 }
 .hero_card_container {
   margin-top: 100px;
-  background: url("src/components/pictures/homebcg.png") no-repeat center;
+  background: url("../assets/homebcg.png") no-repeat center;
   background-size: cover;
   height: 50vh;
 }

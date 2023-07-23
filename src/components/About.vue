@@ -9,7 +9,7 @@ import Footer from "@/components/Footer.vue";
     <h1>ჩვენს შესახებ</h1>
   </div>
   <div class="about_content">
-    <img src="src/components/pictures/Rectangle68@2x.png" alt="">
+    <img src="../assets/Rectangle68@2x.png" alt="">
     <div class="about_content_text_wrapper">
       <h1>bio-gen-science</h1>
       <div class="about_content_text">
@@ -35,7 +35,7 @@ import Footer from "@/components/Footer.vue";
   font-family: 'Helvetica Neue', sans-serif;
 }
 .about_header{
-  background: url("src/components/pictures/homebcg.png") no-repeat center;
+  background: url("../assets/homebcg.png") no-repeat center;
   width: 100%;
   height: 40vh;
   -webkit-background-size: cover;

@@ -311,7 +311,7 @@ onMounted(()=>{
   font-family: 'Helvetica Neue', sans-serif;
 }
 .virus_header{
-  background: url("src/components/pictures/homebcg.png") no-repeat center;
+  background: url("../assets/homebcg.png") no-repeat center;
   width: 100%;
   height: 30vh;
   -webkit-background-size: cover;
