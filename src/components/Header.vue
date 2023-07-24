@@ -73,7 +73,7 @@ const items = ref([
     <Menubar :model="items" class="p-menubar" :class="{'scrolled': scrolled}" @click="handleMenuItemClick">
       <template #start>
         <router-link to="/" >
-          <img src="../assets/logo.svg" alt="">
+          <img src="@/assets/logo.svg" alt="">
         </router-link>
       </template>
       <template #end>
@@ -104,28 +104,36 @@ const items = ref([
 
 <style scoped>
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
+*{
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .p-menubar{
-  position: fixed;
   width: 99%;
+  position: fixed;
+  left: 8px;
   top: 10px;
-  margin: 0 5px;
   z-index: 5;
   font-family: 'Helvetica Neue', sans-serif;
 }
 .p-menubar.scrolled{
   background-color: white;
   margin: 0;
+  right: 0;
+  left: 0;
   top: 0;
   width: 100%;
 }
 .contact_sub_wrapper{
   display: flex;
+  align-items: center;
   padding-right: 8px;
 }
 .contact_wrapper{
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .divider{
   display: block;
@@ -170,6 +178,11 @@ const items = ref([
   background-color: #f5f5f5;
 }
 @media (min-width: 200px) and (max-width: 900px){
+  .p-menubar{
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
   .contact_sub_wrapper{
     display: none;
   }

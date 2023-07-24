@@ -13,7 +13,7 @@ import Footer from "@/components/Footer.vue";
       <p>(+995) 598-824-818</p>
     </div>
     <div class="mail_wrapper">
-      <img src="../assets/mail.svg" alt="">
+      <img class="mail" src="../assets/mail.svg" alt="">
       <p>info@bgs.ge</p>
     </div>
   </div>
@@ -46,5 +46,11 @@ main{
   display: flex;
   align-items: center;
   margin-right: 50px;
+}
+.phone{
+  margin-right: 5px;
+}
+.mail{
+  margin-right: 5px;
 }
 </style>

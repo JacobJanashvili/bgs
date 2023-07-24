@@ -53,8 +53,11 @@ import Button from 'primevue/button';
   margin-top: 5%;
 }
 @media (min-width: 200px) and (max-width: 900px){
+  .hero_title{
+    font-size: 25px;
+  }
   .hero_text_container{
-    width: 400px;
+    width: 300px;
   }
 }
 </style>

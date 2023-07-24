@@ -30,21 +30,27 @@
 </footer>
 </template>
 
-<style scoped>
+<style>
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 *{
   font-family: 'Helvetica Neue', sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 footer{
   background-color: #383838;
   width: 100%;
   margin-top: 100px;
-  height: 20vh;
   color: white;
+  height: 20vh;
 }
 .footer_content{
   display: flex;
   padding: 50px 5px 0 100px;
+
 }
 .footer_items{
   margin-left: 50%;

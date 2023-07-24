@@ -10,7 +10,7 @@ import Footer from "@/components/Footer.vue";
   <main>
     <div class="motivator_wrapper">
       <div class="card">
-        <img class="card_img" src="../assets/sacace.png" alt="">
+        <img class="card_img" src="@/assets/sacace.png" alt="">
         <div class="card_content">
           <h1 class="card_title">საკაცე</h1>
           <div class="card_test_wrapper">
@@ -24,7 +24,7 @@ import Footer from "@/components/Footer.vue";
         </div>
       </div>
       <div class="card">
-        <img class="card_img" src="../assets/sacace.png" alt="">
+        <img class="card_img" src="@/assets/sacace.png" alt="">
         <div class="card_content">
           <h1 class="card_title">ენტროჯენი</h1>
           <div class="card_test_wrapper">
@@ -48,7 +48,7 @@ import Footer from "@/components/Footer.vue";
     </div>
     <div class="catalog">
       <div class="catalog_wrapper">
-        <img src="../assets/catalog_logo.png" alt="">
+        <img src="@/assets/catalog_logo.png" alt="">
         <div class="catalog_download_wrapper">
           <h1>კატალოგის გადმოწერა</h1>
           <a href="https://sacace.com/attache/file/catalogue.pdf" download="catalogue">
@@ -80,8 +80,8 @@ main{
 .card{
   display: flex;
   border: 1px solid rgba(128, 128, 128, 0.38);
-  padding: 20px;
-  width: 40%;
+  padding: 20px 5px 20px 20px;
+  width: 50%;
   margin: 0 50px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -99,7 +99,11 @@ main{
 .card_text{
   font-size: 15px;
 }
-
+.card_img{
+  -o-object-fit: cover;
+  object-fit: contain;
+  margin-right: 10px;
+}
 .certificate_wrapper{
   margin-top: 100px;
 }
@@ -135,8 +139,8 @@ main{
   }
   .card{
     flex-direction: column;
-    width: 80%;
-    margin: 10px 50px;
+    width: 90%;
+    margin: 10px 20px;
   }
   .card_title{
     text-align: center;
