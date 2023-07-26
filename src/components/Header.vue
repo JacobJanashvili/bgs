@@ -46,13 +46,8 @@ const items = ref([
     label: 'პროდუქტები',
     items: [
       {
-        label: 'საკაცე',
-        items: [
-          {
-            label: 'შესახებ',
-            to: '/about-sacace'
-          }
-        ]
+        label: 'საკაჩე',
+        to: '/about-sacace'
       },
       {
         label: 'ენტროჯენი'

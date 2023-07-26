@@ -51,7 +51,7 @@ import Footer from "@/components/Footer.vue";
         <img src="@/assets/catalog_logo.png" alt="">
         <div class="catalog_download_wrapper">
           <h1>კატალოგის გადმოწერა</h1>
-          <a href="https://sacace.com/attache/file/catalogue.pdf" download="catalogue">
+          <a href="https://sacace.com/attache/file/catalogue.pdf" download="catalogue" target="_blank">
             <Button label="გადმოწერა" severity="help" outlined />
           </a>
         </div>
@@ -81,7 +81,7 @@ main{
   display: flex;
   border: 1px solid rgba(128, 128, 128, 0.38);
   padding: 20px 5px 20px 20px;
-  width: 50%;
+  width: 700px;
   margin: 0 50px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;

@@ -6,7 +6,6 @@ import Button from 'primevue/button';
 <template>
 <div class="hero_card_container">
   <div class="hero_text_container">
-    <h1 class="hero_title">BIO-GEN SCIENCE</h1>
     <div class="hero_text">
       <p>კომპანიის მისია:</p>
       <ul class="hero_list">
@@ -18,7 +17,9 @@ import Button from 'primevue/button';
         </li>
       </ul>
     </div>
-    <Button label="მეტის გაგება" severity="help" class="p-button"/>
+    <router-link to="/about">
+      <Button label="მეტის გაგება" severity="help" class="p-button"/>
+    </router-link>
   </div>
 </div>
 
@@ -38,11 +39,9 @@ import Button from 'primevue/button';
 }
 .hero_text_container{
   width: 500px;
-  padding: 2% 0 0 10%;
+  padding: 80px 0 0 10%;
 }
-.hero_title{
-  margin-bottom: 50px;
-}
+
 .hero_list li{
   font-size: 15px;
   font-weight: 300;
@@ -53,9 +52,7 @@ import Button from 'primevue/button';
   margin-top: 5%;
 }
 @media (min-width: 200px) and (max-width: 900px){
-  .hero_title{
-    font-size: 25px;
-  }
+
   .hero_text_container{
     width: 300px;
   }
