@@ -70,14 +70,15 @@ const handleVirusClick = (virus) => {
 <template>
  <Header/>
   <div class="sacace_header">
-    <h1 class="sacace_title">საკაჩის შესახებ</h1>
+    <h1 class="sacace_title">საკაცის შესახებ</h1>
   </div>
   <div class="sacace_viruses">
     <div class="sacace_viruses">
       <div v-for="virus in viruses"  class="sacace_virus" @click="handleVirusClick(virus)">
         <img :src="virus.image" alt="">
         <div class="sacace_virus_text">
-          <p class="sacace_virus_title">{{ virus.title }}</p>
+          <h3 class="sacace_virus_title">{{ virus.title }}</h3>
+          <p class="sacace_virus_description">{{ virus.description }}</p>
         </div>
       </div>
     </div>
@@ -87,10 +88,7 @@ const handleVirusClick = (virus) => {
       <img src="@/assets/catalog_logo.png" alt="">
       <div class="catalog_download_wrapper">
         <h1>კატალოგის გადმოწერა</h1>
-        <a href="https://sacace.com/attache/file/catalogue.pdf" download="catalog" target="_blank">
-          <Button label="გადმოწერა" severity="help" outlined />
-
-        </a>
+        <Button label="გადმოწერა" severity="help" outlined />
       </div>
     </div>
   </div>
@@ -118,32 +116,40 @@ const handleVirusClick = (virus) => {
   color: #9732ED;
 }
 .sacace_viruses{
-  margin-left: 160px;
+  margin-top: 50px;
+  margin-left: 50px;
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(3,1fr);
 }
 .sacace_virus{
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  border: 1px solid rgba(128, 128, 128, 0.53);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   padding: 20px;
   margin: 10px 20px;
   cursor: pointer;
 }
-.sacace_virus img{
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  -o-object-position: center;
-  object-position: center;
+.sacace_virus:hover{
+  background-color: #7E00EA;
+  color: white;
+  -webkit-transition: .3s ease-in;
+  -moz-transition: .3s ease-in;
+  -ms-transition: .3s ease-in;
+  -o-transition: .3s ease-in;
+  transition: .3s ease-in;
 }
-
 .sacace_virus_text{
-  text-align: center;
+  margin-left: 10px;
 }
-.sacace_virus_title{
-  margin-top: 15px;
+.sacace_virus_description{
+  width: 300px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis at the end of the text */
+  margin-top: 10px;
 }
 .catalog{
   width: 90%;

@@ -51,8 +51,9 @@ import Footer from "@/components/Footer.vue";
   margin: 100px 10%;
 }
 .about_content img{
-  width: 400px;
-  height: 320px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .about_content_text_wrapper h1{
   text-transform: uppercase;
@@ -76,11 +77,7 @@ import Footer from "@/components/Footer.vue";
     margin-top: 10px;
   }
   .about_content{
-    margin: 50px auto;
-  }
-  .about_content img{
-    width: 100%;
-    height: auto;
+    margin: 50px 10%
   }
   .about_content_text{
     width: inherit;
