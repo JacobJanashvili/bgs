@@ -21,7 +21,6 @@ const toggleDropdown = () => {
 const handleScroll = () => {
   const scrollOffset = window.scrollY
   scrolled.value = scrollOffset > 0
-  console.log('Scroll Offset:', scrolled);
 }
 onMounted(() =>{
   window.addEventListener('scroll', handleScroll);
@@ -46,16 +45,12 @@ const items = ref([
     label: 'პროდუქტები',
     items: [
       {
-        label: 'საკაცე',
-        items: [
-          {
-            label: 'შესახებ',
-            to: '/about-sacace'
-          }
-        ]
+        label: 'საკაჩე',
+        to: '/about-sacace'
       },
       {
-        label: 'ენტროჯენი'
+        label: 'ენტროჯენი',
+        to: '/about-entrogen'
       }
     ]
   },
@@ -80,7 +75,11 @@ const items = ref([
         <div class="contact_wrapper">
           <div class="contact_sub_wrapper">
             <img src="../assets/phone.svg" alt="">
-            <p>(+995) 598-824-818</p>
+            <p>(+995) 599 74 00 44</p>
+          </div>
+          <div class="contact_sub_wrapper">
+            <img src="../assets/phone.svg" alt="">
+            <p>(+995) 579 22 01 56</p>
           </div>
           <div class="divider"></div>
            <div class="language-picker">

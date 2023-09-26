@@ -21,7 +21,8 @@
         </div><div class="second_item">
           <h3>უკუკავშირი</h3>
           <div class="second_item_text">
-            <p>(+995) 598-824-818</p>
+            <p>(+995) 599 74 00 44</p>
+            <p>(+995) 579 22 01 56</p>
             <p>info@bgs.ge</p>
           </div>
         </div>
@@ -39,6 +40,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  
 }
 footer{
   background-color: #383838;
@@ -86,9 +88,24 @@ footer{
   .footer_title_wrapper{
     margin-bottom: 20px;
   }
+  .footer_title_wrapper a h1{
+    font-size: 20px;
+  }
+  .copyright{
+    font-size: 15px;
+  }
+  h3{
+    font-size: 15px;
+  }
+  .first_item_text a{
+    font-size: 13px;
+  }
+  .second_item_text p{
+    font-size: 13px;
+  }
   .footer_content{
     flex-direction: column;
-    padding: 15px;
+    padding: 30px;
   }
   .footer_items{
     margin: 0;
