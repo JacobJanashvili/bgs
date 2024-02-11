@@ -17,11 +17,11 @@ import Footer from "@/components/Footer.vue";
     ></iframe>
     <div class="contact_wrapper">
       <div class="phone_wrapper">
-        <img class="phone" src="../assets/phone.svg" alt="" />
+        <img class="phone" src="@/assets/phone-icon.svg" alt="" />
         <p>(+995) 579 22 01 56</p>
       </div>
       <div class="phone_wrapper">
-        <img class="phone" src="../assets/phone.svg" alt="" />
+        <img class="phone" src="@/assets/phone-icon.svg" alt="" />
         <p>(+995) 599 74 00 44</p>
       </div>
       <div class="mail_wrapper">
@@ -57,7 +57,7 @@ main {
 .phone_wrapper {
   display: flex;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 16px;
 }
 .phone {
   margin-right: 5px;
@@ -65,4 +65,18 @@ main {
 .mail {
   margin-right: 5px;
 }
+@media (min-width: 100px) and (max-width: 900px) {
+  .contact_wrapper{
+    flex-direction: column;
+  }
+  .mail_wrapper{
+    flex-direction: column;
+    margin-top: 16px;
+  }
+  .phone_wrapper{
+    flex-direction: column;
+    margin: 16px 0;
+  }
+}
+
 </style>

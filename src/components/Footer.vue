@@ -3,22 +3,23 @@
 </script>
 
 <template>
-<footer>
-  <div class="footer_content">
-    <div class="footer_title_wrapper">
-      <router-link to="/" style="text-decoration: none; color: inherit;">
-        <h1>BGS</h1>
-      </router-link>
-      <p class="copyright">უფლება © 2023 ბიჯიეს ჯგუფი სს.</p>
-    </div>
-    <div class="footer_items">
+  <footer>
+    <div class="footer_content">
+      <div class="footer_title_wrapper">
+        <router-link to="/" style="text-decoration: none; color: inherit;">
+          <h1>Bio-gen Science</h1>
+        </router-link>
+        <p class="copyright">უფლება © 2023 ბიჯიეს ჯგუფი სს.</p>
+      </div>
+      <div class="footer_items">
         <div class="first_item">
           <h3>პროდუქტები</h3>
           <div class="first_item_text">
-            <router-link to="/about-sacace">საკაცე</router-link>
-            <a href="#">ენტროჯენი</a>
+            <router-link to="/about-sacace">საკაჩე</router-link>
+            <router-link to="/about-entrogen">ენტროჯენი</router-link>
           </div>
-        </div><div class="second_item">
+        </div>
+        <div class="second_item">
           <h3>უკუკავშირი</h3>
           <div class="second_item_text">
             <p>(+995) 599 74 00 44</p>
@@ -26,89 +27,140 @@
             <p>info@bgs.ge</p>
           </div>
         </div>
+        <div class="third_item">
+          <h3>სოც გვერდები</h3>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="@/assets/Facebook.svg" alt="">
+          </a>
+          <a href="https://www.linkedin.com/feed/" target="_blank">
+            <img src="@/assets/Linkedin.svg" alt="">
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 </template>
 
 <style>
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
-*{
+
+* {
   font-family: 'Helvetica Neue', sans-serif;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  
+
 }
-footer{
+
+footer {
   background-color: #383838;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 150px;
   color: white;
   height: 20vh;
 }
-.footer_content{
+
+.footer_content {
   display: flex;
   padding: 50px 5px 0 100px;
 
 }
-.footer_items{
-  margin-left: 50%;
+
+.footer_items {
+  margin-left: 30%;
   display: flex;
-  align-items: center;
-}
-.footer_title_wrapper h1{
-  color: white;
 
 }
-.copyright{
+
+.first_item,
+.second_item,
+.third_item {
+  margin: 0 79px;
+}
+
+.footer_title_wrapper h1 {
+  color: white;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.footer_title_wrapper h1::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: white;
+}
+
+.copyright {
   margin-top: 10px;
 }
-.first_item_text,.second_item_text{
-  margin-top: 15px;
+
+.first_item_text,
+.second_item_text {
+  margin-top: 20px;
 }
-.first_item_text a{
+
+.first_item_text a {
   color: white;
   display: block;
   text-decoration: none;
   margin: 10px 0;
 }
-.second_item_text p{
+
+.second_item_text p {
   margin: 10px 0;
 }
-.second_item{
-  margin-left: 50px;
+
+.third_item img {
+  margin-right: 10px;
+  margin-top: 20px;
+  cursor: pointer;
 }
-@media (min-width: 200px) and (max-width: 900px){
-  footer{
+
+
+@media (min-width: 200px) and (max-width: 900px) {
+  footer {
     height: auto;
   }
-  .footer_title_wrapper{
-    margin-bottom: 20px;
+  .footer_title_wrapper {
+    margin-bottom: 53px;
   }
-  .footer_title_wrapper a h1{
+  .first_item, .second_item, .third_item{
+    margin: 0;
+  }
+  .footer_title_wrapper a h1 {
+    font-size: 34px;
+  }
+
+  .copyright {
+    font-size: 16px;
+  }
+
+  h3 {
     font-size: 20px;
   }
-  .copyright{
-    font-size: 15px;
+
+  .first_item_text a {
+    font-size: 16px;
+    margin-bottom: 12px;
   }
-  h3{
-    font-size: 15px;
+
+  .second_item_text p {
+    font-size: 16px;
   }
-  .first_item_text a{
-    font-size: 13px;
-  }
-  .second_item_text p{
-    font-size: 13px;
-  }
-  .footer_content{
+
+  .footer_content {
     flex-direction: column;
-    padding: 30px;
+    padding: 28px;
   }
-  .footer_items{
-    margin: 0;
+
+  .footer_items {
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 </style>
