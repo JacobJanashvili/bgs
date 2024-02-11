@@ -21,13 +21,13 @@ onMounted(() => {
 const productDescriptionlist = [
   {
     title: "საკაჩე",
-    img: "/Sacace-homepage.jpg",
+    img: "Sacace-homepage.jpg",
     description: "SACACE არის ინოვაციური კომპანია, რომელიც 2001 წელს დაიწყო ბიოტექნოლოგიის სფეროში აქტიურად საქმეებს...",
     link: "/about-sacace"
   },
   {
     title: "ენტროჯენი",
-    img: "/Entrogen-homepage.jpg",
+    img: "Entrogen-homepage.jpg",
     description: "EntroGen, Inc არის ბიოტექნოლოგიური კომპანია, რომელიც ავითარებსახალ გენოტიპურ ანალიზებს ფარმაკოგენომიკისა და ონკოლოგიის სფეროებში...",
     link: "/about-entrogen"
   }
