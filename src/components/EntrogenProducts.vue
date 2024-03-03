@@ -69,6 +69,7 @@ const handleEntrogenProductClick = (product) => {
   router.push("/entrogen-component");
 };
 </script>
+
 <template>
   <Header />
   <div class="entrogen_header">
@@ -81,13 +82,17 @@ const handleEntrogenProductClick = (product) => {
     <div class="about_entrogen_text">
       <div class="about_entrogen_title">ენტროჯენი</div>
       <p>
-        <strong>EntroGen</strong>
-        არის ბიოტექნოლოგიური კომპანია, რომელიც ფოკუსირებულია მოლეკულურ სადიაგნოსტიკო პროდუქტებზე
-        ჰემატოლოგიისა და
-        ონკოლოგიის სფეროებში. EntroGen-ს აქვს რეალურ დროში PCR-ზე დაფუძნებული ტესტების მზარდი კომერციული პორტფელი, რომლის
-        მრავალი პროდუქტი გამოიყენება სხვადასხვა ავთვისებიანი სიმსივნეების მიზანმიმართული თერაპიის სახელმძღვანელოდ და
-        მონიტორინგისთვის. EntroGen-ის კვალი აღწევს მსოფლიოს ყველა კუთხეს და უზრუნველყოფს საიმედო კლინიკურ და კვლევით
-        პროდუქტებს.
+        <strong>EntroGen (აშშ)</strong>
+        გთავაზობთ კომპლექსურ გადაწყვეტილებებს ონკოლოგიური და ჰემატოლოგიური დაავადებების მოლეკულური დიაგნოსტიკის სფეროში,
+        კომპანია უზრუნველყოფს შესაბამისი სადიაგნოსტიკო რეაგენტების, დანადგარების და პროგრამული უზრუნველყოფის მიწოდებას.
+      </p>
+      <p>
+        ნუკლეინის მჟავის ავტომატური ექსტრაქციით დაწყებული და გენომის თანმიმდევრობების ინტერპრეტაციით დამთავრებული,
+        კომპანიის მიერ შემოთავაზებული გადაწყვეტები არის ზუსტი, ეკონომიური და მასშტაბური.
+      </p>
+      <p>
+        კომპანიის მისიაა თერაპიის დიაგნოსტიკური გადაწყვეტილებების შემუშავება და ონკოლოგიური დაავადებების მიზნობრივი
+        თერაპიის განვითარების ხელშეწყობა.
       </p>
     </div>
   </div>
@@ -99,6 +104,9 @@ const handleEntrogenProductClick = (product) => {
         <p class="entrogen_desease_title">{{ entrogen_desease.title }}</p>
       </div>
       <p class="entrogen_desease_description">{{ entrogen_desease.description }}</p>
+      <div class="entrogen-more">
+        <p>მეტი ინფორმაცია</p>
+      </div>
     </div>
   </div>
   <div class="entrogen_catalog_wrapper">
@@ -106,7 +114,7 @@ const handleEntrogenProductClick = (product) => {
       <img src="@/assets/Home-catalog-image.jpg" alt="">
       <div class="entrogen_download_wrapper">
         <h1 class="download_title">
-          გადმოიწერეთ ჩვენი კატეგორია
+          გადმოიწერეთ ენტროჯენის კატეგორია
         </h1>
         <p class="download_description">
           იხილეთ ყველა ტიპის მოლეკულური დიაგნოსტიკის ნაკრები
@@ -120,6 +128,7 @@ const handleEntrogenProductClick = (product) => {
   </div>
   <Footer />
 </template>
+
 <style>
 .about_entrogen_wrapper {
   display: flex;
@@ -195,8 +204,27 @@ const handleEntrogenProductClick = (product) => {
   border-radius: 10px;
   width: 302px;
   height: 249px;
+  position: relative;
 }
-
+.entrogen-more{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 18px;
+  border-radius: 0 0 10px 10px;
+  background-color: #BE00FE;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+.entrogen-more p{
+  text-align: center;
+  color: white;
+}
+.entrogen_desease:hover .entrogen-more{
+  opacity: 1;
+}
 .entrogen_desease_subwrapper {
   display: flex;
   align-items: center;
@@ -217,6 +245,7 @@ const handleEntrogenProductClick = (product) => {
   display: -webkit-box;
   margin-top: 20px;
   line-height: 22.61px;
+  margin-bottom: 7px;
 }
 
 .entrogen_catalog_wrapper {
@@ -335,4 +364,5 @@ const handleEntrogenProductClick = (product) => {
     width: 100%;
     margin-top: 32px;
   }
-}</style>
+}
+</style>

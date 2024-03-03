@@ -120,54 +120,14 @@ const handleVirusClick = (virus) => {
     <div class="about_sacace_text">
       <h1 class="about_sacace_title">საკაჩე</h1>
       <p>
-        <strong>Sacace Biotechnologies S.r.l.,</strong>
-        არის ინოვაციური იტალიური კომპანია, რომელიც მდებარეობს Como, ლომბარდიაში.
-        დაარსდა 2001 წელს.
+        <strong>SACACE BioTechnologies (იტალია)</strong> 
+        ავითარებს, აწარმოებს და რეალიზაციას უწევს 140-ზე მეტი დასახელების სრულ ნაკრებს ადამიანის დაავადებების,
+        ვეტერინარული და საკვების ხარისიხის დიაგნოსტიკის მიზნით.
       </p>
-      <p>
-        <strong>SACACE</strong>
-        აწვდის თავის პროდუქტებს საავადმყოფოებსა და ლაბორატორიებს დისტრიბუტორთა გლობალური ქსელის მეშვეობით
-        მდებარეობს მსოფლიოს 60-ზე მეტ ქვეყანაში.
-      </p>
-      <p>
-        <strong>SACACE</strong> 
-        აერთიანებს ყველა საჭირო ფუნქციას – კვლევა და განვითარება, წარმოება, ლოჯისტიკა,
-        მოლეკულური ბიოლოგიის დიაგნოსტიკური ტესტების ვრცელი ხაზის მარკეტინგი და გაყიდვები, რომლებიც ზუსტად ამოწმებენ
-        დაავადების არსებობისთვის ადამიანების, ცხოველების და საკვების მინდვრებში - მის ადეკვატური მხარდაჭერა
-        კლიენტებს.
-      </p>
-      <p>
-        <strong>SACACE</strong>
-        შეიმუშავებს, აწარმოებს და ყიდის დისტრიბუტორების მეშვეობით 140-ზე მეტ სრულ კომპლექტს
-        ადამიანის, ვეტერინარული და საკვების დიაგნოსტიკა. Sacace-ის მიერ წარმოებული კომპლექტები მოიცავს ყველა რეაგენტს
-        ნუკლეინის მჟავას ექსტრაქცია, საპირისპირო ტრანსკრიფცია, სპეციფიკური გენომიური რეგიონების გაძლიერება და გამოვლენა
-        აგაროზის გელის ელექტროფორეზით, რეალურ დროში გაძლიერებით და ბოლო წერტილის გამოვლენით.
-      </p>
-      <p>
-        პროდუქტები შექმნილია იმისათვის, რომ უზრუნველვყოთ მოხმარების სიმარტივე, ისინი CE მარკირებულნი არიან შესაბამისობაში
-        <strong>დირექტივა 98/79EC (pdf)</strong>
-        და აერთიანებს უმაღლესი ხარისხის რეაგენტებს თანმიმდევრულობის
-        უზრუნველსაყოფად,
-        საიმედოობა და ხანგრძლივი შენახვის ვადა.
-      </p>
-      <p>
-        ხარისხის უზრუნველყოფა კომპანიის წარმატების ქვაკუთხედია. ხარისხის მართვის სისტემა
-        მიღებული აქვს <strong>ISO 13485:2016 (pdf)</strong> სერთიფიკატი და პროდუქტის დიზაინისა და წარმოების ყველა ასპექტი
-        ხორციელდება ამ სტანდარტის შესაბამისად.
-      </p>
-      <p>
-        SACACE-მა მოიპოვა CE ნიშნის სერტიფიკატი ინ ვიტრო დიაგნოსტიკური სამედიცინო მოწყობილობებისთვის, შესაბამისად
-        98/79/EC დირექტივის B დანართის II დანართი
-      </p>
-      <p>
-        SACACE-მა ახლახან მოიპოვა CE ნიშნის სერტიფიკატი HCV Real-TM Quant DX და HBV Real-TM
-        Quant DX ინ ვიტრო დიაგნოსტიკური სამედიცინო მოწყობილობები დირექტივის დანართი II-ის ა და მიხედვით
-        98/79/EC.
-      </p>
-      <p>
-        SACACE-მა ახლახან მოიპოვა CE ნიშნის სერთიფიკატი HIV Real-TM Quant DX in vitro დიაგნოსტიკისთვის
-        სამედიცინო მოწყობილობა 98/79/EC დირექტივის დანართი II-ის A სიის მიხედვით
-      </p>
+      <p>ეს ნაკრებები მოიცავს რეაგენტების სრულ კომპლექტებს ნუკლეინის მჟავების ექსტრაქციის, მათი კონკრეტული უბნების
+        ამპლიფიკაციისა (PCR ან RT-PCR) და შემდგომი გამოვლენისათვის.</p>
+      <p> სადიაგნოსტიკო ნაკრებები გამოირჩევა მაღალი სპეციფიურობით, მდგრადობით და რეპროდუცირების უნარით, რასაც თან ერთვის
+        მათი ეკონომიურობა და კონკურენტუნარიანი ფასი.</p>
     </div>
   </div>
 
@@ -180,6 +140,9 @@ const handleVirusClick = (virus) => {
       <p class="sacace_virus_description">
         {{ virus.description }}
       </p>
+      <div class="sacace-more">
+        <p>მეტი ინფორმაცია</p>
+      </div>
     </div>
   </div>
 
@@ -188,7 +151,7 @@ const handleVirusClick = (virus) => {
       <img src="@/assets/Home-catalog-image.jpg" alt="">
       <div class="sacace_download_wrapper">
         <h1 class="download_title">
-          გადმოიწერეთ ჩვენი კატეგორია
+          გადმოიწერეთ საკაჩეს კატეგორია
         </h1>
         <p class="download_description">
           იხილეთ ყველა ტიპის მოლეკულური დიაგნოსტიკის ნაკრები
@@ -272,14 +235,15 @@ const handleVirusClick = (virus) => {
 }
 
 .sacace_viruses {
-  width: 800px;
+  
   margin-top: 60px;
-  margin-left: 10%;
+  padding: 0 150px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   row-gap: 30px;
   column-gap: 30px;
-  place-self: center;
+  place-content: center;
+  
 }
 
 .sacace_virus {
@@ -289,6 +253,7 @@ const handleVirusClick = (virus) => {
   border-radius: 10px;
   width: 302px;
   height: 249px;
+  position: relative;
 }
 
 .sacace_virus_subwrapper {
@@ -338,7 +303,27 @@ const handleVirusClick = (virus) => {
 .sacace_download_wrapper {
   margin: 0 65px;
 }
-
+.sacace-more{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #BE00FE;
+  padding: 18px;
+  border-radius: 0 0 10px 10px;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  
+}
+.sacace_virus:hover .sacace-more{
+  opacity: 1;
+}
+.sacace-more p{
+  text-align: center;
+  color: white;
+  
+}
 .download_title {
   font-size: 28px;
   font-weight: 500;

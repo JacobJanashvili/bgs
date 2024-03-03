@@ -22,13 +22,13 @@ const productDescriptionlist = [
   {
     title: "საკაჩე",
     img: "Sacace-homepage.jpg",
-    description: "SACACE არის ინოვაციური კომპანია, რომელიც 2001 წელს დაიწყო ბიოტექნოლოგიის სფეროში აქტიურად საქმეებს...",
+    description: "SACACE BioTechnologies (იტალია) ავითარებს, აწარმოებს და რეალიზაციას უწევს 140-ზე მეტი დასახელების სრულ ნაკრებს ადამიანის დაავადებების, ვეტერინარული და საკვების ხარისიხის დიაგნოსტიკის მიზნით...",
     link: "/about-sacace"
   },
   {
     title: "ენტროჯენი",
     img: "Entrogen-homepage.jpg",
-    description: "EntroGen, Inc არის ბიოტექნოლოგიური კომპანია, რომელიც ავითარებსახალ გენოტიპურ ანალიზებს ფარმაკოგენომიკისა და ონკოლოგიის სფეროებში...",
+    description: "EntroGen (აშშ) გთავაზობთ კომპლექსურ გადაწყვეტილებებს ონკოლოგიური და ჰემატოლოგიური დაავადებების მოლეკულური დიაგნოსტიკის სფეროში...",
     link: "/about-entrogen"
   }
 ]
@@ -160,7 +160,7 @@ main {
 
 .card_text {
   font-size: 16px;
-  text-align: justify;
+  text-align: left;
   margin-top: 20px;
 }
 
