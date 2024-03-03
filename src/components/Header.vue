@@ -203,10 +203,9 @@ const items = ref([
   width: 100vw;
   height: 100vh;
   position: fixed;
-
   top: 0;
   left: 0;
-  background-color: #F0E8FD;
+  background-color: white;
   z-index: 6;
   transition: 200ms ease-in-out;
 }
