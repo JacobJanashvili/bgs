@@ -280,7 +280,6 @@ EntroGen RNA Fusion Gene Panel არის სრული რნმ-ის ა
     <h1 class="entrogen_item_title">{{ title }}</h1>
   </div>
   <div class="entrogen_item_description" v-if="description">
-    <h1 class="entrogen_item_description_title">აღწერა</h1>
     <p class="entrogen_item_description_text">{{ description }}</p>
   </div>
   <div class="reagent_wrapper">
@@ -508,14 +507,17 @@ EntroGen RNA Fusion Gene Panel არის სრული რნმ-ის ა
   width: 400px;
 }
 @media (max-width: 900px) and (min-width: 100px){
+  
   .entrogen_item_description{
-    width: auto;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 16px;
   }
   .entrogen_item_title{
-    font-size: 20px;
+    font-size: 30px;
   }
   .reagent_wrapper_title{
-    font-size: 20px;
+    font-size: 26px;
   }
   .reagent_wrapper {
     width: auto;
@@ -524,9 +526,13 @@ EntroGen RNA Fusion Gene Panel არის სრული რნმ-ის ა
   .reagent{
     flex-direction: column;
   }
+  .reagent_container_description{
+    text-align: inherit;
+  }
   .reagent_container_description p{
-    text-align: justify;
-    width: auto;
+    
+    width: 80%;
+    line-height: 22.82px;
   }
   .reagent_container_code a{
     width: auto;

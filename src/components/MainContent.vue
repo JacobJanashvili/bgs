@@ -66,23 +66,6 @@ const certificateList = [
       </div>
     </div>
     <img class="funnel_img" src="../assets/sixreasons-en.png" alt="" />
-    <div class="home_catalog_wrapper">
-      <div class="home_catalog">
-        <img src="@/assets/Home-catalog-image.jpg" alt="">
-        <div class="home_download_wrapper">
-          <h1 class="download_title">
-            გადმოიწერეთ ჩვენი კატეგორია
-          </h1>
-          <p class="download_description">
-            იხილეთ ყველა ტიპის მოლეკულური დიაგნოსტიკის ნაკრები
-            და ინსტრუმენტები ჩვენს კატალოგში
-          </p>
-          <a :href="EntrogenPDf" download>
-            <Button label="გადმოწერა" class="download-btn"></Button>
-          </a>
-        </div>
-      </div>
-    </div>
     <div v-if="windowWidth > 900" class="certificate_wrapper">
       <h2 class="certificate_title">სერტიფიკატები</h2>
       <div class="certificate_subwrapper">
@@ -132,13 +115,14 @@ main {
 .motivator_wrapper {
   margin: 40px 50px;
   display: flex;
+  width: 100%;
   justify-content: center;
 }
 
 .card {
   display: flex;
   border: 1px solid #CFCFCF;
-  width: 620px;
+  width: 43vw;
   margin: 0 16px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -168,9 +152,7 @@ main {
   margin: auto;
 }
 
-.certificate_wrapper {
-  margin-top: 65px;
-}
+
 
 .certificate_subwrapper {
   margin-top: 45px;
@@ -213,7 +195,6 @@ main {
   width: 100%;
   height: 283px;
   background: linear-gradient(92.45deg, #FBF5FF -3.7%, #FBF5FF 109.09%);
-  margin-top: 80px;
   position: relative;
 }
 
@@ -241,7 +222,7 @@ main {
 
 .funnel_img {
   object-fit: cover;
-  margin-top: 80px;
+  margin: 80px 0;
 }
 
 .p-button {

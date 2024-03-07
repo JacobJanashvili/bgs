@@ -140,7 +140,7 @@ const handleVirusClick = (virus) => {
       <p class="sacace_virus_description">
         {{ virus.description }}
       </p>
-      <div class="sacace-more">
+      <div class="sacace-more" v-if="windowWidth > 900">
         <p>მეტი ინფორმაცია</p>
       </div>
     </div>
@@ -148,10 +148,10 @@ const handleVirusClick = (virus) => {
 
   <div class="sacace_catalog_wrapper">
     <div class="sacace_catalog">
-      <img src="@/assets/Home-catalog-image.jpg" alt="">
+      <img v-if="windowWidth > 900" src="@/assets/Home-catalog-image.jpg" alt="">
       <div class="sacace_download_wrapper">
         <h1 class="download_title">
-          გადმოიწერეთ საკაჩეს კატეგორია
+          გადმოიწერეთ საკაჩეს კატალოგი
         </h1>
         <p class="download_description">
           იხილეთ ყველა ტიპის მოლეკულური დიაგნოსტიკის ნაკრები
@@ -235,7 +235,7 @@ const handleVirusClick = (virus) => {
 }
 
 .sacace_viruses {
-  
+
   margin-top: 60px;
   padding: 0 150px;
   display: grid;
@@ -243,7 +243,7 @@ const handleVirusClick = (virus) => {
   row-gap: 30px;
   column-gap: 30px;
   place-content: center;
-  
+
 }
 
 .sacace_virus {
@@ -254,6 +254,7 @@ const handleVirusClick = (virus) => {
   width: 302px;
   height: 249px;
   position: relative;
+
 }
 
 .sacace_virus_subwrapper {
@@ -303,7 +304,8 @@ const handleVirusClick = (virus) => {
 .sacace_download_wrapper {
   margin: 0 65px;
 }
-.sacace-more{
+
+.sacace-more {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -314,16 +316,33 @@ const handleVirusClick = (virus) => {
   border-radius: 0 0 10px 10px;
   opacity: 0;
   transition: opacity 200ms ease-in-out;
-  
 }
-.sacace_virus:hover .sacace-more{
+
+.sacace-mobile-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 18px;
+}
+
+.sacace-mobile-more p {
+  color: black;
+  font-size: 1.1rem;
+
+}
+
+.sacace_virus:hover .sacace-more {
   opacity: 1;
 }
-.sacace-more p{
+
+.sacace-more p {
   text-align: center;
   color: white;
-  
+
 }
+
 .download_title {
   font-size: 28px;
   font-weight: 500;
@@ -344,16 +363,16 @@ const handleVirusClick = (virus) => {
 @media (min-width: 100px) and (max-width: 900px) {
   .sacace_viruses {
     grid-template-columns: repeat(2, 1fr);
-    margin: 27px 20px;
     width: 100%;
-    column-gap: 20px;
+    column-gap: 10px;
     row-gap: 20px;
+    margin-top: 27px;
   }
 
   .sacace_virus {
     width: 184px;
     height: 343px;
-    padding: 10px;
+
   }
 
   .sacace_virus_subwrapper {
@@ -362,8 +381,9 @@ const handleVirusClick = (virus) => {
   }
 
   .sacace_virus img {
-    width: 100%;
-    height: 90px;
+    width: 164px;
+    height: 77px;
+    object-fit: cover;
   }
 
 
@@ -379,7 +399,7 @@ const handleVirusClick = (virus) => {
   }
 
   .sacace_catalog_wrapper {
-    margin-top: 55%;
+    margin-top: 80px;
   }
 
   .sacace_catalog {
@@ -388,7 +408,7 @@ const handleVirusClick = (virus) => {
   }
 
   .sacace_download_wrapper {
-    margin: 25px 20px;
+    margin: 20px;
   }
 
   .download_description {

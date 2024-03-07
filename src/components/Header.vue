@@ -24,16 +24,12 @@ onBeforeUnmount(() => {
 
 const onScroll = () => {
   windowTopScroll.value = window.scrollY
-  console.log(windowTopScroll)
 }
 
 const onResize = () => {
   windowWidth = window.innerWidth
 }
-const handleMenuItemClick = (item) => {
 
-  console.log("clicked")
-};
 
 let scrolled = ref(false);
 const toggleDropdown = () => {

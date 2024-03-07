@@ -1223,21 +1223,10 @@ onMounted(() => {
             <h1>{{ hepatitis.title }}</h1>
             <p>{{ hepatitis.description }}</p>
           </div>
-          <div
-            class="toggle_reagent"
-            @click="toggleHepatitis(hepatitis.reagents)"
-          >
+          <div class="toggle_reagent" @click="toggleHepatitis(hepatitis.reagents)">
             <p>რეაგენტები</p>
-            <img
-              v-if="hepatitisToggled"
-              src="@/assets/arrow-up.png"
-              alt="arrow-up"
-            />
-            <img
-              v-if="!hepatitisToggled"
-              src="@/assets/arrow-down.png"
-              alt=""
-            />
+            <img v-if="hepatitisToggled" src="@/assets/arrow-up.png" alt="arrow-up" />
+            <img v-if="!hepatitisToggled" src="@/assets/arrow-down.png" alt="" />
           </div>
           <div class="virus_reagent" v-if="hepatitis.reagents.active">
             <div class="reagent_container">
@@ -1260,74 +1249,38 @@ onMounted(() => {
             </div>
             <div class="reagent_container">
               <h2>აღწერა</h2>
-              <p
-                class="reagent_description"
-                v-if="hepatitis.reagents.description"
-              >
+              <p class="reagent_description" v-if="hepatitis.reagents.description">
                 {{ hepatitis.reagents.description }}
               </p>
-              <p
-                class="reagent_description"
-                v-if="hepatitis.reagents.first_reagent"
-              >
+              <p class="reagent_description" v-if="hepatitis.reagents.first_reagent">
                 {{ hepatitis.reagents.first_reagent.description }}
               </p>
-              <p
-                class="reagent_description"
-                v-if="hepatitis.reagents.second_reagent"
-              >
+              <p class="reagent_description" v-if="hepatitis.reagents.second_reagent">
                 {{ hepatitis.reagents.second_reagent.description }}
               </p>
-              <p
-                class="reagent_description"
-                v-if="hepatitis.reagents.third_reagent"
-              >
+              <p class="reagent_description" v-if="hepatitis.reagents.third_reagent">
                 {{ hepatitis.reagents.third_reagent.description }}
               </p>
-              <p
-                class="reagent_description"
-                v-if="hepatitis.reagents.fourth_reagent"
-              >
+              <p class="reagent_description" v-if="hepatitis.reagents.fourth_reagent">
                 {{ hepatitis.reagents.fourth_reagent.description }}
               </p>
             </div>
             <div class="reagent_container">
               <h2>კოდი</h2>
-              <a
-                :href="`https://sacace.com/hepatitis-viruses-hcv-rna.htm#s${hepatitis.reagents.id}`"
-                target="_blank"
-                class="reagent_code"
-                v-if="hepatitis.reagents.code"
-                >{{ hepatitis.reagents.code }}</a
-              >
-              <a
-                :href="`https://sacace.com/hepatitis-viruses-hcv-rna.htm#s${hepatitis.reagents.id}`"
-                target="_blank"
-                class="reagent_code"
-                v-if="hepatitis.reagents.first_reagent"
-                >{{ hepatitis.reagents.first_reagent.code }}</a
-              >
-              <a
-                class="reagent_code"
-                v-if="hepatitis.reagents.second_reagent"
-                :href="`https://sacace.com/hepatitis-viruses-hcv-rna.htm#s${hepatitis.reagents.id}`"
-                target="_blank"
-                >{{ hepatitis.reagents.second_reagent.code }}</a
-              >
-              <a
-                :href="`https://sacace.com/hepatitis-viruses-hcv-rna.htm#s${hepatitis.reagents.id}`"
-                target="_blank"
-                class="reagent_code"
-                v-if="hepatitis.reagents.third_reagent"
-                >{{ hepatitis.reagents.third_reagent.code }}</a
-              >
-              <a
-                :href="`https://sacace.com/hepatitis-viruses-hcv-rna.htm#s${hepatitis.reagents.id}`"
-                target="_blank"
-                class="reagent_code"
-                v-if="hepatitis.reagents.fourth_reagent"
-                >{{ hepatitis.reagents.fourth_reagent.code }}</a
-              >
+              <a :href="`https://sacace.com/hepatitis-viruses-hcv-rna.htm#s${hepatitis.reagents.id}`" target="_blank"
+                class="reagent_code" v-if="hepatitis.reagents.code">{{ hepatitis.reagents.code }}</a>
+              <a :href="`https://sacace.com/hepatitis-viruses-hcv-rna.htm#s${hepatitis.reagents.id}`" target="_blank"
+                class="reagent_code" v-if="hepatitis.reagents.first_reagent">{{ hepatitis.reagents.first_reagent.code
+                }}</a>
+              <a class="reagent_code" v-if="hepatitis.reagents.second_reagent"
+                :href="`https://sacace.com/hepatitis-viruses-hcv-rna.htm#s${hepatitis.reagents.id}`" target="_blank">{{
+        hepatitis.reagents.second_reagent.code }}</a>
+              <a :href="`https://sacace.com/hepatitis-viruses-hcv-rna.htm#s${hepatitis.reagents.id}`" target="_blank"
+                class="reagent_code" v-if="hepatitis.reagents.third_reagent">{{ hepatitis.reagents.third_reagent.code
+                }}</a>
+              <a :href="`https://sacace.com/hepatitis-viruses-hcv-rna.htm#s${hepatitis.reagents.id}`" target="_blank"
+                class="reagent_code" v-if="hepatitis.reagents.fourth_reagent">{{ hepatitis.reagents.fourth_reagent.code
+                }}</a>
             </div>
           </div>
         </template>
@@ -1339,11 +1292,7 @@ onMounted(() => {
             <p>{{ hiv.description }}</p>
             <div class="toggle_reagent" @click="toggleHIV(hiv.reagents)">
               <p>რეაგენტები</p>
-              <img
-                v-if="hivToggled"
-                src="@/assets/arrow-up.png"
-                alt="arrow-up"
-              />
+              <img v-if="hivToggled" src="@/assets/arrow-up.png" alt="arrow-up" />
               <img v-if="!hivToggled" src="@/assets/arrow-down.png" alt="" />
             </div>
             <div class="virus_reagent" v-if="hiv.reagents.active">
@@ -1367,55 +1316,27 @@ onMounted(() => {
                 <p class="reagent_description" v-if="hiv.reagents.description">
                   {{ hiv.reagents.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="hiv.reagents.first_reagent"
-                >
+                <p class="reagent_description" v-if="hiv.reagents.first_reagent">
                   {{ hiv.reagents.first_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="hiv.reagents.second_reagent"
-                >
+                <p class="reagent_description" v-if="hiv.reagents.second_reagent">
                   {{ hiv.reagents.second_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="hiv.reagents.third_reagent"
-                >
+                <p class="reagent_description" v-if="hiv.reagents.third_reagent">
                   {{ hiv.reagents.third_reagent.description }}
                 </p>
               </div>
               <div class="reagent_container">
                 <h2>კოდი</h2>
-                <a
-                  :href="`https://sacace.com/human-immunodeficiency-virus.htm#s${hiv.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="hiv.reagents.code"
-                  >{{ hiv.reagents.code }}</a
-                >
-                <a
-                  :href="`https://sacace.com/human-immunodeficiency-virus.htm#s${hiv.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="hiv.reagents.first_reagent"
-                  >{{ hiv.reagents.first_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="hiv.reagents.second_reagent"
-                  :href="`https://sacace.com/human-immunodeficiency-virus.htm#s${hiv.reagents.id}`"
-                  target="_blank"
-                  >{{ hiv.reagents.second_reagent.code }}</a
-                >
-                <a
-                  :href="`https://sacace.com/human-immunodeficiency-virus.htm#s${hiv.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="hiv.reagents.third_reagent"
-                  >{{ hiv.reagents.third_reagent.code }}</a
-                >
+                <a :href="`https://sacace.com/human-immunodeficiency-virus.htm#s${hiv.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="hiv.reagents.code">{{ hiv.reagents.code }}</a>
+                <a :href="`https://sacace.com/human-immunodeficiency-virus.htm#s${hiv.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="hiv.reagents.first_reagent">{{ hiv.reagents.first_reagent.code }}</a>
+                <a class="reagent_code" v-if="hiv.reagents.second_reagent"
+                  :href="`https://sacace.com/human-immunodeficiency-virus.htm#s${hiv.reagents.id}`" target="_blank">{{
+        hiv.reagents.second_reagent.code }}</a>
+                <a :href="`https://sacace.com/human-immunodeficiency-virus.htm#s${hiv.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="hiv.reagents.third_reagent">{{ hiv.reagents.third_reagent.code }}</a>
               </div>
             </div>
           </div>
@@ -1428,11 +1349,7 @@ onMounted(() => {
             <p>{{ hpv.description }}</p>
             <div class="toggle_reagent" @click="toggleHPV(hpv.reagents)">
               <p>რეაგენტები</p>
-              <img
-                v-if="hpvToggled"
-                src="@/assets/arrow-up.png"
-                alt="arrow-up"
-              />
+              <img v-if="hpvToggled" src="@/assets/arrow-up.png" alt="arrow-up" />
               <img v-if="!hpvToggled" src="@/assets/arrow-down.png" alt="" />
             </div>
             <div class="virus_reagent" v-if="hpv.reagents.active">
@@ -1453,42 +1370,22 @@ onMounted(() => {
                 <p class="reagent_description" v-if="hpv.reagents.description">
                   {{ hpv.reagents.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="hpv.reagents.first_reagent"
-                >
+                <p class="reagent_description" v-if="hpv.reagents.first_reagent">
                   {{ hpv.reagents.first_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="hpv.reagents.second_reagent"
-                >
+                <p class="reagent_description" v-if="hpv.reagents.second_reagent">
                   {{ hpv.reagents.second_reagent.description }}
                 </p>
               </div>
               <div class="reagent_container">
                 <h2>კოდი</h2>
-                <a
-                  :href="`https://sacace.com/human-papilloma-virus.htm#s${hpv.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="hpv.reagents.code"
-                  >{{ hpv.reagents.code }}</a
-                >
-                <a
-                  :href="`https://sacace.com/human-papilloma-virus.htm#s${hpv.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="hpv.reagents.first_reagent"
-                  >{{ hpv.reagents.first_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="hpv.reagents.second_reagent"
-                  :href="`https://sacace.com/human-papilloma-virus.htm#s${hpv.reagents.id}`"
-                  target="_blank"
-                  >{{ hpv.reagents.second_reagent.code }}</a
-                >
+                <a :href="`https://sacace.com/human-papilloma-virus.htm#s${hpv.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="hpv.reagents.code">{{ hpv.reagents.code }}</a>
+                <a :href="`https://sacace.com/human-papilloma-virus.htm#s${hpv.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="hpv.reagents.first_reagent">{{ hpv.reagents.first_reagent.code }}</a>
+                <a class="reagent_code" v-if="hpv.reagents.second_reagent"
+                  :href="`https://sacace.com/human-papilloma-virus.htm#s${hpv.reagents.id}`" target="_blank">{{
+        hpv.reagents.second_reagent.code }}</a>
               </div>
             </div>
           </div>
@@ -1501,11 +1398,7 @@ onMounted(() => {
             <p>{{ std.description }}</p>
             <div class="toggle_reagent" @click="toggleSTD(std.reagents)">
               <p>რეაგენტები</p>
-              <img
-                v-if="stdToggled"
-                src="@/assets/arrow-up.png"
-                alt="arrow-up"
-              />
+              <img v-if="stdToggled" src="@/assets/arrow-up.png" alt="arrow-up" />
               <img v-if="!stdToggled" src="@/assets/arrow-down.png" alt="" />
             </div>
             <div class="virus_reagent" v-if="std.reagents.active">
@@ -1544,120 +1437,58 @@ onMounted(() => {
                 <p class="reagent_description" v-if="std.reagents.description">
                   {{ std.reagents.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="std.reagents.first_reagent"
-                >
+                <p class="reagent_description" v-if="std.reagents.first_reagent">
                   {{ std.reagents.first_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="std.reagents.second_reagent"
-                >
+                <p class="reagent_description" v-if="std.reagents.second_reagent">
                   {{ std.reagents.second_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="std.reagents.third_reagent"
-                >
+                <p class="reagent_description" v-if="std.reagents.third_reagent">
                   {{ std.reagents.third_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="std.reagents.fourth_reagent"
-                >
+                <p class="reagent_description" v-if="std.reagents.fourth_reagent">
                   {{ std.reagents.fourth_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="std.reagents.fifth_reagent"
-                >
+                <p class="reagent_description" v-if="std.reagents.fifth_reagent">
                   {{ std.reagents.fifth_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="std.reagents.sixth_reagent"
-                >
+                <p class="reagent_description" v-if="std.reagents.sixth_reagent">
                   {{ std.reagents.sixth_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="std.reagents.seventh_reagent"
-                >
+                <p class="reagent_description" v-if="std.reagents.seventh_reagent">
                   {{ std.reagents.seventh_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="std.reagents.eighth_reagent"
-                >
+                <p class="reagent_description" v-if="std.reagents.eighth_reagent">
                   {{ std.reagents.eighth_reagent.description }}
                 </p>
               </div>
               <div class="reagent_container">
                 <h2>კოდი</h2>
-                <a
-                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="std.reagents.code"
-                  >{{ std.reagents.code }}</a
-                >
-                <a
-                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="std.reagents.first_reagent"
-                  >{{ std.reagents.first_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="std.reagents.second_reagent"
-                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`"
-                  target="_blank"
-                  >{{ std.reagents.second_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="std.reagents.third_reagent"
-                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`"
-                  target="_blank"
-                  >{{ std.reagents.third_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="std.reagents.fourth_reagent"
-                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`"
-                  target="_blank"
-                  >{{ std.reagents.fourth_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="std.reagents.fifth_reagent"
-                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`"
-                  target="_blank"
-                  >{{ std.reagents.fifth_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="std.reagents.sixth_reagent"
-                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`"
-                  target="_blank"
-                  >{{ std.reagents.sixth_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="std.reagents.seventh_reagent"
-                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`"
-                  target="_blank"
-                  >{{ std.reagents.seventh_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="std.reagents.eighth_reagent"
-                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`"
-                  target="_blank"
-                  >{{ std.reagents.eighth_reagent.code }}</a
-                >
+                <a :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="std.reagents.code">{{ std.reagents.code }}</a>
+                <a :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="std.reagents.first_reagent">{{ std.reagents.first_reagent.code }}</a>
+                <a class="reagent_code" v-if="std.reagents.second_reagent"
+                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`" target="_blank">{{
+        std.reagents.second_reagent.code }}</a>
+                <a class="reagent_code" v-if="std.reagents.third_reagent"
+                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`" target="_blank">{{
+        std.reagents.third_reagent.code }}</a>
+                <a class="reagent_code" v-if="std.reagents.fourth_reagent"
+                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`" target="_blank">{{
+        std.reagents.fourth_reagent.code }}</a>
+                <a class="reagent_code" v-if="std.reagents.fifth_reagent"
+                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`" target="_blank">{{
+        std.reagents.fifth_reagent.code }}</a>
+                <a class="reagent_code" v-if="std.reagents.sixth_reagent"
+                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`" target="_blank">{{
+        std.reagents.sixth_reagent.code }}</a>
+                <a class="reagent_code" v-if="std.reagents.seventh_reagent"
+                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`" target="_blank">{{
+        std.reagents.seventh_reagent.code }}</a>
+                <a class="reagent_code" v-if="std.reagents.eighth_reagent"
+                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${std.reagents.id}`" target="_blank">{{
+        std.reagents.eighth_reagent.code }}</a>
               </div>
             </div>
           </div>
@@ -1670,11 +1501,7 @@ onMounted(() => {
             <p>{{ herpes.description }}</p>
             <div class="toggle_reagent" @click="toggleHerpes(herpes.reagents)">
               <p>რეაგენტები</p>
-              <img
-                v-if="herpesToggled"
-                src="@/assets/arrow-up.png"
-                alt="arrow-up"
-              />
+              <img v-if="herpesToggled" src="@/assets/arrow-up.png" alt="arrow-up" />
               <img v-if="!herpesToggled" src="@/assets/arrow-down.png" alt="" />
             </div>
             <div class="virus_reagent" v-if="herpes.reagents.active">
@@ -1695,91 +1522,46 @@ onMounted(() => {
               </div>
               <div class="reagent_container">
                 <h2>აღწერა</h2>
-                <p
-                  class="reagent_description"
-                  v-if="herpes.reagents.description"
-                >
+                <p class="reagent_description" v-if="herpes.reagents.description">
                   {{ herpes.reagents.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="herpes.reagents.first_reagent"
-                >
+                <p class="reagent_description" v-if="herpes.reagents.first_reagent">
                   {{ herpes.reagents.first_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="herpes.reagents.second_reagent"
-                >
+                <p class="reagent_description" v-if="herpes.reagents.second_reagent">
                   {{ herpes.reagents.second_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="herpes.reagents.third_reagent"
-                >
+                <p class="reagent_description" v-if="herpes.reagents.third_reagent">
                   {{ herpes.reagents.third_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="herpes.reagents.fourth_reagent"
-                >
+                <p class="reagent_description" v-if="herpes.reagents.fourth_reagent">
                   {{ herpes.reagents.fourth_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="herpes.reagents.fifth_reagent"
-                >
+                <p class="reagent_description" v-if="herpes.reagents.fifth_reagent">
                   {{ herpes.reagents.fifth_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="herpes.reagents.sixth_reagent"
-                >
+                <p class="reagent_description" v-if="herpes.reagents.sixth_reagent">
                   {{ herpes.reagents.sixth_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="herpes.reagents.seventh_reagent"
-                >
+                <p class="reagent_description" v-if="herpes.reagents.seventh_reagent">
                   {{ herpes.reagents.seventh_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="herpes.reagents.eighth_reagent"
-                >
+                <p class="reagent_description" v-if="herpes.reagents.eighth_reagent">
                   {{ herpes.reagents.eighth_reagent.description }}
                 </p>
               </div>
               <div class="reagent_container">
                 <h2>კოდი</h2>
-                <a
-                  :href="`https://sacace.com/herpes-virus-infections.htm#s${herpes.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="herpes.reagents.code"
-                  >{{ herpes.reagents.code }}</a
-                >
-                <a
-                  :href="`https://sacace.com/herpes-virus-infections.htm#s${herpes.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="herpes.reagents.first_reagent"
-                  >{{ herpes.reagents.first_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="herpes.reagents.second_reagent"
-                  :href="`https://sacace.com/herpes-virus-infections.htm#s${herpes.reagents.id}`"
-                  target="_blank"
-                  >{{ herpes.reagents.second_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="herpes.reagents.third_reagent"
-                  :href="`https://sacace.com/herpes-virus-infections.htm#s${herpes.reagents.id}`"
-                  target="_blank"
-                  >{{ herpes.reagents.third_reagent.code }}</a
-                >
+                <a :href="`https://sacace.com/herpes-virus-infections.htm#s${herpes.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="herpes.reagents.code">{{ herpes.reagents.code }}</a>
+                <a :href="`https://sacace.com/herpes-virus-infections.htm#s${herpes.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="herpes.reagents.first_reagent">{{ herpes.reagents.first_reagent.code }}</a>
+                <a class="reagent_code" v-if="herpes.reagents.second_reagent"
+                  :href="`https://sacace.com/herpes-virus-infections.htm#s${herpes.reagents.id}`" target="_blank">{{
+        herpes.reagents.second_reagent.code }}</a>
+                <a class="reagent_code" v-if="herpes.reagents.third_reagent"
+                  :href="`https://sacace.com/herpes-virus-infections.htm#s${herpes.reagents.id}`" target="_blank">{{
+        herpes.reagents.third_reagent.code }}</a>
               </div>
             </div>
           </div>
@@ -1792,11 +1574,7 @@ onMounted(() => {
             <p>{{ torch.description }}</p>
             <div class="toggle_reagent" @click="toggleTorch(torch.reagents)">
               <p>რეაგენტები</p>
-              <img
-                v-if="torchToggled"
-                src="@/assets/arrow-up.png"
-                alt="arrow-up"
-              />
+              <img v-if="torchToggled" src="@/assets/arrow-up.png" alt="arrow-up" />
               <img v-if="!torchToggled" src="@/assets/arrow-down.png" alt="" />
             </div>
             <div class="virus_reagent" v-if="torch.reagents.active">
@@ -1808,22 +1586,14 @@ onMounted(() => {
               </div>
               <div class="reagent_container">
                 <h2>აღწერა</h2>
-                <p
-                  class="reagent_description"
-                  v-if="torch.reagents.description"
-                >
+                <p class="reagent_description" v-if="torch.reagents.description">
                   {{ torch.reagents.description }}
                 </p>
               </div>
               <div class="reagent_container">
                 <h2>კოდი</h2>
-                <a
-                  :href="`https://sacace.com/torch-infections.htm#s${torch.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="torch.reagents.code"
-                  >{{ torch.reagents.code }}</a
-                >
+                <a :href="`https://sacace.com/torch-infections.htm#s${torch.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="torch.reagents.code">{{ torch.reagents.code }}</a>
               </div>
             </div>
           </div>
@@ -1834,21 +1604,10 @@ onMounted(() => {
           <div class="virus_type">
             <h1>{{ respiratory.title }}</h1>
             <p>{{ respiratory.description }}</p>
-            <div
-              class="toggle_reagent"
-              @click="toggleRespiratory(respiratory.reagents)"
-            >
+            <div class="toggle_reagent" @click="toggleRespiratory(respiratory.reagents)">
               <p>რეაგენტები</p>
-              <img
-                v-if="respiratoryToggled"
-                src="@/assets/arrow-up.png"
-                alt="arrow-up"
-              />
-              <img
-                v-if="!respiratoryToggled"
-                src="@/assets/arrow-down.png"
-                alt=""
-              />
+              <img v-if="respiratoryToggled" src="@/assets/arrow-up.png" alt="arrow-up" />
+              <img v-if="!respiratoryToggled" src="@/assets/arrow-down.png" alt="" />
             </div>
             <div class="virus_reagent" v-if="respiratory.reagents.active">
               <div class="reagent_container">
@@ -1856,123 +1615,65 @@ onMounted(() => {
                 <p class="reagent_title" v-if="respiratory.reagents.title">
                   {{ respiratory.reagents.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="respiratory.reagents.first_reagent"
-                >
+                <p class="reagent_title" v-if="respiratory.reagents.first_reagent">
                   {{ respiratory.reagents.first_reagent.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="respiratory.reagents.second_reagent"
-                >
+                <p class="reagent_title" v-if="respiratory.reagents.second_reagent">
                   {{ respiratory.reagents.second_reagent.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="respiratory.reagents.third_reagent"
-                >
+                <p class="reagent_title" v-if="respiratory.reagents.third_reagent">
                   {{ respiratory.reagents.third_reagent.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="respiratory.reagents.fourth_reagent"
-                >
+                <p class="reagent_title" v-if="respiratory.reagents.fourth_reagent">
                   {{ respiratory.reagents.fourth_reagent.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="respiratory.reagents.fifth_reagent"
-                >
+                <p class="reagent_title" v-if="respiratory.reagents.fifth_reagent">
                   {{ respiratory.reagents.fifth_reagent.title }}
                 </p>
               </div>
               <div class="reagent_container">
                 <h2>აღწერა</h2>
-                <p
-                  class="reagent_description"
-                  v-if="respiratory.reagents.description"
-                >
+                <p class="reagent_description" v-if="respiratory.reagents.description">
                   {{ respiratory.reagents.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="respiratory.reagents.first_reagent"
-                >
+                <p class="reagent_description" v-if="respiratory.reagents.first_reagent">
                   {{ respiratory.reagents.first_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="respiratory.reagents.second_reagent"
-                >
+                <p class="reagent_description" v-if="respiratory.reagents.second_reagent">
                   {{ respiratory.reagents.second_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="respiratory.reagents.third_reagent"
-                >
+                <p class="reagent_description" v-if="respiratory.reagents.third_reagent">
                   {{ respiratory.reagents.third_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="respiratory.reagents.fourth_reagent"
-                >
+                <p class="reagent_description" v-if="respiratory.reagents.fourth_reagent">
                   {{ respiratory.reagents.fourth_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="respiratory.reagents.fifth_reagent"
-                >
+                <p class="reagent_description" v-if="respiratory.reagents.fifth_reagent">
                   {{ respiratory.reagents.fifth_reagent.description }}
                 </p>
               </div>
               <div class="reagent_container">
                 <h2>კოდი</h2>
-                <a
-                  :href="`https://sacace.com/respiratory-infections.htm#s${respiratory.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="respiratory.reagents.code"
-                  >{{ respiratory.reagents.code }}</a
-                >
-                <a
-                  :href="`https://sacace.com/respiratory-infections.htm#s${respiratory.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="respiratory.reagents.first_reagent"
-                >
+                <a :href="`https://sacace.com/respiratory-infections.htm#s${respiratory.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="respiratory.reagents.code">{{ respiratory.reagents.code }}</a>
+                <a :href="`https://sacace.com/respiratory-infections.htm#s${respiratory.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="respiratory.reagents.first_reagent">
                   {{ respiratory.reagents.first_reagent.code }}
                 </a>
-                <a
-                  :href="`https://sacace.com/respiratory-infections.htm#s${respiratory.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="respiratory.reagents.second_reagent"
-                >
+                <a :href="`https://sacace.com/respiratory-infections.htm#s${respiratory.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="respiratory.reagents.second_reagent">
                   {{ respiratory.reagents.second_reagent.code }}
                 </a>
-                <a
-                  :href="`https://sacace.com/respiratory-infections.htm#s${respiratory.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="respiratory.reagents.third_reagent"
-                >
+                <a :href="`https://sacace.com/respiratory-infections.htm#s${respiratory.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="respiratory.reagents.third_reagent">
                   {{ respiratory.reagents.third_reagent.code }}
                 </a>
-                <a
-                  :href="`https://sacace.com/respiratory-infections.htm#s${respiratory.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="respiratory.reagents.fourth_reagent"
-                >
+                <a :href="`https://sacace.com/respiratory-infections.htm#s${respiratory.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="respiratory.reagents.fourth_reagent">
                   {{ respiratory.reagents.fourth_reagent.code }}
                 </a>
-                <a
-                  :href="`https://sacace.com/respiratory-infections.htm#s${respiratory.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="respiratory.reagents.fifth_reagent"
-                >
+                <a :href="`https://sacace.com/respiratory-infections.htm#s${respiratory.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="respiratory.reagents.fifth_reagent">
                   {{ respiratory.reagents.fifth_reagent.code }}
                 </a>
               </div>
@@ -1985,21 +1686,10 @@ onMounted(() => {
           <div class="virus_type">
             <h1>{{ neurological.title }}</h1>
             <p>{{ neurological.description }}</p>
-            <div
-              class="toggle_reagent"
-              @click="toggleNeurological(neurological.reagents)"
-            >
+            <div class="toggle_reagent" @click="toggleNeurological(neurological.reagents)">
               <p>რეაგენტები</p>
-              <img
-                v-if="neurologicalToggled"
-                src="@/assets/arrow-up.png"
-                alt="arrow-up"
-              />
-              <img
-                v-if="!neurologicalToggled"
-                src="@/assets/arrow-down.png"
-                alt=""
-              />
+              <img v-if="neurologicalToggled" src="@/assets/arrow-up.png" alt="arrow-up" />
+              <img v-if="!neurologicalToggled" src="@/assets/arrow-down.png" alt="" />
             </div>
             <div class="virus_reagent" v-if="neurological.reagents.active">
               <div class="reagent_container">
@@ -2007,83 +1697,45 @@ onMounted(() => {
                 <p class="reagent_title" v-if="neurological.reagents.title">
                   {{ neurological.reagents.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="neurological.reagents.first_reagent"
-                >
+                <p class="reagent_title" v-if="neurological.reagents.first_reagent">
                   {{ neurological.reagents.first_reagent.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="neurological.reagents.second_reagent"
-                >
+                <p class="reagent_title" v-if="neurological.reagents.second_reagent">
                   {{ neurological.reagents.second_reagent.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="neurological.reagents.third_reagent"
-                >
+                <p class="reagent_title" v-if="neurological.reagents.third_reagent">
                   {{ neurological.reagents.third_reagent.title }}
                 </p>
               </div>
               <div class="reagent_container">
                 <h2>აღწერა</h2>
-                <p
-                  class="reagent_description"
-                  v-if="neurological.reagents.description"
-                >
+                <p class="reagent_description" v-if="neurological.reagents.description">
                   {{ neurological.reagents.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="neurological.reagents.first_reagent"
-                >
+                <p class="reagent_description" v-if="neurological.reagents.first_reagent">
                   {{ neurological.reagents.first_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="neurological.reagents.second_reagent"
-                >
+                <p class="reagent_description" v-if="neurological.reagents.second_reagent">
                   {{ neurological.reagents.second_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="neurological.reagents.third_reagent"
-                >
+                <p class="reagent_description" v-if="neurological.reagents.third_reagent">
                   {{ neurological.reagents.third_reagent.description }}
                 </p>
               </div>
               <div class="reagent_container">
                 <h2>კოდი</h2>
-                <a
-                  :href="`https://sacace.com/neurological-infections.htm#s${neurological.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="neurological.reagents.code"
-                  >{{ neurological.reagents.code }}</a
-                >
-                <a
-                  :href="`https://sacace.com/neurological-infections.htm#s${neurological.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="neurological.reagents.first_reagent"
-                >
+                <a :href="`https://sacace.com/neurological-infections.htm#s${neurological.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="neurological.reagents.code">{{ neurological.reagents.code }}</a>
+                <a :href="`https://sacace.com/neurological-infections.htm#s${neurological.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="neurological.reagents.first_reagent">
                   {{ neurological.reagents.first_reagent.code }}
                 </a>
-                <a
-                  :href="`https://sacace.com/neurological-infections.htm#s${neurological.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="neurological.reagents.second_reagent"
-                >
+                <a :href="`https://sacace.com/neurological-infections.htm#s${neurological.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="neurological.reagents.second_reagent">
                   {{ neurological.reagents.second_reagent.code }}
                 </a>
-                <a
-                  :href="`https://sacace.com/neurological-infections.htm#s${neurological.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="neurological.reagents.third_reagent"
-                >
+                <a :href="`https://sacace.com/neurological-infections.htm#s${neurological.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="neurological.reagents.third_reagent">
                   {{ neurological.reagents.third_reagent.code }}
                 </a>
               </div>
@@ -2096,21 +1748,10 @@ onMounted(() => {
           <div class="virus_type">
             <h1>{{ intestinal.title }}</h1>
             <p>{{ intestinal.description }}</p>
-            <div
-              class="toggle_reagent"
-              @click="toggleIntestinal(intestinal.reagents)"
-            >
+            <div class="toggle_reagent" @click="toggleIntestinal(intestinal.reagents)">
               <p>რეაგენტები</p>
-              <img
-                v-if="intestinalToggled"
-                src="@/assets/arrow-up.png"
-                alt="arrow-up"
-              />
-              <img
-                v-if="!intestinalToggled"
-                src="@/assets/arrow-down.png"
-                alt=""
-              />
+              <img v-if="intestinalToggled" src="@/assets/arrow-up.png" alt="arrow-up" />
+              <img v-if="!intestinalToggled" src="@/assets/arrow-down.png" alt="" />
             </div>
             <div class="virus_reagent" v-if="intestinal.reagents.active">
               <div class="reagent_container">
@@ -2118,151 +1759,78 @@ onMounted(() => {
                 <p class="reagent_title" v-if="intestinal.reagents.title">
                   {{ intestinal.reagents.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="intestinal.reagents.first_reagent"
-                >
+                <p class="reagent_title" v-if="intestinal.reagents.first_reagent">
                   {{ intestinal.reagents.first_reagent.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="intestinal.reagents.second_reagent"
-                >
+                <p class="reagent_title" v-if="intestinal.reagents.second_reagent">
                   {{ intestinal.reagents.second_reagent.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="intestinal.reagents.third_reagent"
-                >
+                <p class="reagent_title" v-if="intestinal.reagents.third_reagent">
                   {{ intestinal.reagents.third_reagent.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="intestinal.reagents.fourth_reagent"
-                >
+                <p class="reagent_title" v-if="intestinal.reagents.fourth_reagent">
                   {{ intestinal.reagents.fourth_reagent.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="intestinal.reagents.fifth_reagent"
-                >
+                <p class="reagent_title" v-if="intestinal.reagents.fifth_reagent">
                   {{ intestinal.reagents.fifth_reagent.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="intestinal.reagents.sixth_reagent"
-                >
+                <p class="reagent_title" v-if="intestinal.reagents.sixth_reagent">
                   {{ intestinal.reagents.sixth_reagent.title }}
                 </p>
               </div>
               <div class="reagent_container">
                 <h2>აღწერა</h2>
-                <p
-                  class="reagent_description"
-                  v-if="intestinal.reagents.description"
-                >
+                <p class="reagent_description" v-if="intestinal.reagents.description">
                   {{ intestinal.reagents.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="intestinal.reagents.first_reagent"
-                >
+                <p class="reagent_description" v-if="intestinal.reagents.first_reagent">
                   {{ intestinal.reagents.first_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="intestinal.reagents.second_reagent"
-                >
+                <p class="reagent_description" v-if="intestinal.reagents.second_reagent">
                   {{ intestinal.reagents.second_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="intestinal.reagents.third_reagent"
-                >
+                <p class="reagent_description" v-if="intestinal.reagents.third_reagent">
                   {{ intestinal.reagents.third_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="intestinal.reagents.fourth_reagent"
-                >
+                <p class="reagent_description" v-if="intestinal.reagents.fourth_reagent">
                   {{ intestinal.reagents.fourth_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="intestinal.reagents.fifth_reagent"
-                >
+                <p class="reagent_description" v-if="intestinal.reagents.fifth_reagent">
                   {{ intestinal.reagents.fifth_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="intestinal.reagents.sixth_reagent"
-                >
+                <p class="reagent_description" v-if="intestinal.reagents.sixth_reagent">
                   {{ intestinal.reagents.sixth_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="intestinal.reagents.seventh_reagent"
-                >
+                <p class="reagent_description" v-if="intestinal.reagents.seventh_reagent">
                   {{ intestinal.reagents.seventh_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="intestinal.reagents.eighth_reagent"
-                >
+                <p class="reagent_description" v-if="intestinal.reagents.eighth_reagent">
                   {{ intestinal.reagents.eighth_reagent.description }}
                 </p>
               </div>
               <div class="reagent_container">
                 <h2>კოდი</h2>
-                <a
+                <a :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${intestinal.reagents.id}`"
+                  target="_blank" class="reagent_code" v-if="intestinal.reagents.code">{{ intestinal.reagents.code
+                  }}</a>
+                <a :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${intestinal.reagents.id}`"
+                  target="_blank" class="reagent_code" v-if="intestinal.reagents.first_reagent">{{
+        intestinal.reagents.first_reagent.code }}</a>
+                <a class="reagent_code" v-if="intestinal.reagents.second_reagent"
                   :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${intestinal.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="intestinal.reagents.code"
-                  >{{ intestinal.reagents.code }}</a
-                >
-                <a
+                  target="_blank">{{ intestinal.reagents.second_reagent.code }}</a>
+                <a class="reagent_code" v-if="intestinal.reagents.third_reagent"
                   :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${intestinal.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="intestinal.reagents.first_reagent"
-                  >{{ intestinal.reagents.first_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="intestinal.reagents.second_reagent"
+                  target="_blank">{{ intestinal.reagents.third_reagent.code }}</a>
+                <a class="reagent_code" v-if="intestinal.reagents.fourth_reagent"
                   :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${intestinal.reagents.id}`"
-                  target="_blank"
-                  >{{ intestinal.reagents.second_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="intestinal.reagents.third_reagent"
+                  target="_blank">{{ intestinal.reagents.fourth_reagent.code }}</a>
+                <a class="reagent_code" v-if="intestinal.reagents.fifth_reagent"
                   :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${intestinal.reagents.id}`"
-                  target="_blank"
-                  >{{ intestinal.reagents.third_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="intestinal.reagents.fourth_reagent"
+                  target="_blank">{{ intestinal.reagents.fifth_reagent.code }}</a>
+                <a class="reagent_code" v-if="intestinal.reagents.sixth_reagent"
                   :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${intestinal.reagents.id}`"
-                  target="_blank"
-                  >{{ intestinal.reagents.fourth_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="intestinal.reagents.fifth_reagent"
-                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${intestinal.reagents.id}`"
-                  target="_blank"
-                  >{{ intestinal.reagents.fifth_reagent.code }}</a
-                >
-                <a
-                  class="reagent_code"
-                  v-if="intestinal.reagents.sixth_reagent"
-                  :href="`https://sacace.com/sexually-transmitted-diseases.htm#s${intestinal.reagents.id}`"
-                  target="_blank"
-                  >{{ intestinal.reagents.sixth_reagent.code }}</a
-                >
+                  target="_blank">{{ intestinal.reagents.sixth_reagent.code }}</a>
               </div>
             </div>
           </div>
@@ -2273,21 +1841,10 @@ onMounted(() => {
           <div class="virus_type">
             <h1>{{ dangerous.title }}</h1>
             <p>{{ dangerous.description }}</p>
-            <div
-              class="toggle_reagent"
-              @click="toggleDangerous(dangerous.reagents)"
-            >
+            <div class="toggle_reagent" @click="toggleDangerous(dangerous.reagents)">
               <p>რეაგენტები</p>
-              <img
-                v-if="dangerousInfectionToggled"
-                src="@/assets/arrow-up.png"
-                alt="arrow-up"
-              />
-              <img
-                v-if="!dangerousInfectionToggled"
-                src="@/assets/arrow-down.png"
-                alt=""
-              />
+              <img v-if="dangerousInfectionToggled" src="@/assets/arrow-up.png" alt="arrow-up" />
+              <img v-if="!dangerousInfectionToggled" src="@/assets/arrow-down.png" alt="" />
             </div>
             <div class="virus_reagent" v-if="dangerous.reagents.active">
               <div class="reagent_container">
@@ -2295,63 +1852,35 @@ onMounted(() => {
                 <p class="reagent_title" v-if="dangerous.reagents.title">
                   {{ dangerous.reagents.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="dangerous.reagents.first_reagent"
-                >
+                <p class="reagent_title" v-if="dangerous.reagents.first_reagent">
                   {{ dangerous.reagents.first_reagent.title }}
                 </p>
-                <p
-                  class="reagent_title"
-                  v-if="dangerous.reagents.second_reagent"
-                >
+                <p class="reagent_title" v-if="dangerous.reagents.second_reagent">
                   {{ dangerous.reagents.second_reagent.title }}
                 </p>
               </div>
               <div class="reagent_container">
                 <h2>აღწერა</h2>
-                <p
-                  class="reagent_description"
-                  v-if="dangerous.reagents.description"
-                >
+                <p class="reagent_description" v-if="dangerous.reagents.description">
                   {{ dangerous.reagents.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="dangerous.reagents.first_reagent"
-                >
+                <p class="reagent_description" v-if="dangerous.reagents.first_reagent">
                   {{ dangerous.reagents.first_reagent.description }}
                 </p>
-                <p
-                  class="reagent_description"
-                  v-if="dangerous.reagents.second_reagent"
-                >
+                <p class="reagent_description" v-if="dangerous.reagents.second_reagent">
                   {{ dangerous.reagents.second_reagent.description }}
                 </p>
               </div>
               <div class="reagent_container">
                 <h2>კოდი</h2>
-                <a
-                  :href="`https://sacace.com/dangerous-infections.htm#s${dangerous.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="dangerous.reagents.code"
-                  >{{ dangerous.reagents.code }}</a
-                >
-                <a
-                  :href="`https://sacace.com/dangerous-infections.htm#s${dangerous.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="dangerous.reagents.first_reagent"
-                >
+                <a :href="`https://sacace.com/dangerous-infections.htm#s${dangerous.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="dangerous.reagents.code">{{ dangerous.reagents.code }}</a>
+                <a :href="`https://sacace.com/dangerous-infections.htm#s${dangerous.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="dangerous.reagents.first_reagent">
                   {{ dangerous.reagents.first_reagent.code }}
                 </a>
-                <a
-                  :href="`https://sacace.com/dangerous-infections.htm#s${dangerous.reagents.id}`"
-                  target="_blank"
-                  class="reagent_code"
-                  v-if="dangerous.reagents.second_reagent"
-                >
+                <a :href="`https://sacace.com/dangerous-infections.htm#s${dangerous.reagents.id}`" target="_blank"
+                  class="reagent_code" v-if="dangerous.reagents.second_reagent">
                   {{ dangerous.reagents.second_reagent.code }}
                 </a>
               </div>
@@ -2366,9 +1895,11 @@ onMounted(() => {
 
 <style scoped>
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
+
 * {
   font-family: "Helvetica Neue", sans-serif;
 }
+
 .virus_header {
   background: url("../assets/homebcg.png") no-repeat center;
   width: 100%;
@@ -2380,6 +1911,7 @@ onMounted(() => {
   justify-content: center;
   align-items: center;
 }
+
 .virus_header h1 {
   color: #9732ed;
 }
@@ -2390,21 +1922,25 @@ main {
   align-items: center;
   flex-direction: column;
 }
+
 .virus_description {
   margin: 100px 0;
   width: 800px;
   position: relative;
   padding-bottom: 50px;
 }
+
 .virus_description p {
   display: block;
   line-height: 35px;
   text-align: justify;
 }
+
 .virus_description h1 {
   text-align: center;
   margin-bottom: 25px;
 }
+
 .virus_type {
   margin-top: 50px;
   width: 800px;
@@ -2415,13 +1951,16 @@ main {
 
   text-align: justify;
 }
+
 .virus_type {
   line-height: 35px;
 }
+
 .virus_type h1 {
   text-align: center;
   margin-bottom: 25px;
 }
+
 .toggle_reagent {
   display: flex;
   cursor: pointer;
@@ -2435,6 +1974,7 @@ main {
   align-items: center;
   padding-bottom: 100px;
 }
+
 .reagent_container {
   margin: 0 20px;
 }
@@ -2446,44 +1986,70 @@ main {
   height: 80px;
   margin-top: 10px;
 }
+
 .reagent_title {
   line-height: 1.2rem;
   height: 80px;
   margin-top: 10px;
 }
+
 .reagent_description {
   height: 80px;
   line-height: 1.2rem;
   width: 400px;
   margin-top: 10px;
 }
-@media (max-width: 900px) and (min-width: 100px){
-  .virus_description{
-    width: auto;
+
+@media (max-width: 900px) and (min-width: 100px) {
+  .virus_description {
+    width: 80%;
+    margin: 20px auto;
   }
-  .virus_description h1{
+
+  .virus_description h1 {
     font-size: 20px;
   }
-  .virus_description p{
-    font-size: 13px;
+
+  .virus_description p {
+    font-size: 16px;
   }
-  .virus_header h1{
+
+  .virus_header h1 {
     font-size: 20px;
   }
-  .virus_type{
-    width: auto;
+
+  .virus_type {
+    width: 80%;
+    margin: 0 auto;
   }
-  .virus_type h1{
+
+  .virus_type h1 {
     font-size: 20px;
   }
-  .virus_type p{
-    font-size: 13px;
+
+  .virus_type p {
+    font-size: 16px;
   }
-  .virus_reagent{
+
+  .virus_reagent {
     flex-direction: column;
+    padding-bottom: 80px;
   }
-  .reagent_container p{
+  .reagent_container{
+    margin: 10px 20px;
+    text-align: center;
+  }
+  .reagent_title{
+    height: auto;
+  }
+  .reagent_description{
+    height: auto;
+  }
+  .reagent_container p {
     width: auto;
+  }
+  .reagent_code{
+    height: auto;
   }
 }
 </style>

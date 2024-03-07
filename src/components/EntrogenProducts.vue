@@ -104,17 +104,17 @@ const handleEntrogenProductClick = (product) => {
         <p class="entrogen_desease_title">{{ entrogen_desease.title }}</p>
       </div>
       <p class="entrogen_desease_description">{{ entrogen_desease.description }}</p>
-      <div class="entrogen-more">
+      <div class="entrogen-more" v-if="windowWidth > 900">
         <p>მეტი ინფორმაცია</p>
       </div>
     </div>
   </div>
   <div class="entrogen_catalog_wrapper">
     <div class="entrogen_catalog">
-      <img src="@/assets/Home-catalog-image.jpg" alt="">
+      <img v-if="windowWidth > 900" src="@/assets/Home-catalog-image.jpg" alt="">
       <div class="entrogen_download_wrapper">
         <h1 class="download_title">
-          გადმოიწერეთ ენტროჯენის კატეგორია
+          გადმოიწერეთ ენტროჯენის კატალოგი
         </h1>
         <p class="download_description">
           იხილეთ ყველა ტიპის მოლეკულური დიაგნოსტიკის ნაკრები
@@ -130,6 +130,7 @@ const handleEntrogenProductClick = (product) => {
 </template>
 
 <style>
+
 .about_entrogen_wrapper {
   display: flex;
   justify-content: center;
@@ -298,15 +299,17 @@ const handleEntrogenProductClick = (product) => {
   .entrogen_deseases {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    column-gap: 20px;
+    column-gap: 10px;
     row-gap: 20px;
-    margin: 27px 20px;
+    margin-top: 27px;
+    margin-left: 0;
+    overflow: hidden;
+    padding: 0 1%;
   }
 
   .entrogen_desease {
     width: 184px;
     height: 343px;
-    padding: 10px;
   }
 
   .entrogen_desease_subwrapper {
@@ -333,7 +336,7 @@ const handleEntrogenProductClick = (product) => {
   }
 
   .entrogen_catalog_wrapper {
-    margin-top: 55%;
+    margin-top: 80px;
   }
 
   .entrogen_catalog {
@@ -341,12 +344,8 @@ const handleEntrogenProductClick = (product) => {
     flex-direction: column;
   }
 
-  .entrogen_catalog img {
-    width: 90%;
-  }
-
   .entrogen_download_wrapper {
-    margin: 25px 20px;
+    margin: 20px
   }
 
   .download_title {
