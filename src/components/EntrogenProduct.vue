@@ -296,11 +296,7 @@ EntroGen RNA Fusion Gene Panel არის სრული რნმ-ის ა
         </div>
         <div class="reagent_container reagent_container_code">
           <h2>კოდი</h2>
-          <a
-            target="_blank"
-            :href="`http://entrogen.com/web3/${type.linkTitle}`"
-            >{{ type.code }}</a
-          >
+          <a target="_blank" :href="`http://entrogen.com/web3/${type.linkTitle}`">{{ type.code }}</a>
         </div>
       </div>
     </template>
@@ -316,11 +312,7 @@ EntroGen RNA Fusion Gene Panel არის სრული რნმ-ის ა
         </div>
         <div class="reagent_container reagent_container_code">
           <h2>კოდი</h2>
-          <a
-            target="_blank"
-            :href="`http://entrogen.com/web3/${type.linkTitle}`"
-            >{{ type.code }}</a
-          >
+          <a target="_blank" :href="`http://entrogen.com/web3/${type.linkTitle}`">{{ type.code }}</a>
         </div>
       </div>
     </template>
@@ -336,11 +328,7 @@ EntroGen RNA Fusion Gene Panel არის სრული რნმ-ის ა
         </div>
         <div class="reagent_container reagent_container_code">
           <h2>კოდი</h2>
-          <a
-            target="_blank"
-            :href="`http://entrogen.com/web3/${type.linkTitle}`"
-            >{{ type.code }}</a
-          >
+          <a target="_blank" :href="`http://entrogen.com/web3/${type.linkTitle}`">{{ type.code }}</a>
         </div>
       </div>
     </template>
@@ -356,11 +344,7 @@ EntroGen RNA Fusion Gene Panel არის სრული რნმ-ის ა
         </div>
         <div class="reagent_container reagent_container_code">
           <h2>კოდი</h2>
-          <a
-            target="_blank"
-            :href="`http://entrogen.com/web3/${type.linkTitle}`"
-            >{{ type.code }}</a
-          >
+          <a target="_blank" :href="`http://entrogen.com/web3/${type.linkTitle}`">{{ type.code }}</a>
         </div>
       </div>
     </template>
@@ -376,11 +360,7 @@ EntroGen RNA Fusion Gene Panel არის სრული რნმ-ის ა
         </div>
         <div class="reagent_container reagent_container_code">
           <h2>კოდი</h2>
-          <a
-            target="_blank"
-            :href="`http://entrogen.com/web3/${type.linkTitle}`"
-            >{{ type.code }}</a
-          >
+          <a target="_blank" :href="`http://entrogen.com/web3/${type.linkTitle}`">{{ type.code }}</a>
         </div>
       </div>
     </template>
@@ -396,11 +376,7 @@ EntroGen RNA Fusion Gene Panel არის სრული რნმ-ის ა
         </div>
         <div class="reagent_container reagent_container_code">
           <h2>კოდი</h2>
-          <a
-            target="_blank"
-            :href="`http://entrogen.com/web3/${type.linkTitle}`"
-            >{{ type.code }}</a
-          >
+          <a target="_blank" :href="`http://entrogen.com/web3/${type.linkTitle}`">{{ type.code }}</a>
         </div>
       </div>
     </template>
@@ -416,11 +392,7 @@ EntroGen RNA Fusion Gene Panel არის სრული რნმ-ის ა
         </div>
         <div class="reagent_container reagent_container_code">
           <h2>კოდი</h2>
-          <a
-            target="_blank"
-            :href="`http://entrogen.com/web3/${type.linkTitle}`"
-            >{{ type.code }}</a
-          >
+          <a target="_blank" :href="`http://entrogen.com/web3/${type.linkTitle}`">{{ type.code }}</a>
         </div>
       </div>
     </template>
@@ -436,11 +408,7 @@ EntroGen RNA Fusion Gene Panel არის სრული რნმ-ის ა
         </div>
         <div class="reagent_container reagent_container_code">
           <h2>კოდი</h2>
-          <a
-            target="_blank"
-            :href="`http://entrogen.com/web3/${type.linkTitle}`"
-            >{{ type.code }}</a
-          >
+          <a target="_blank" :href="`http://entrogen.com/web3/${type.linkTitle}`">{{ type.code }}</a>
         </div>
       </div>
     </template>
@@ -458,87 +426,108 @@ EntroGen RNA Fusion Gene Panel არის სრული რნმ-ის ა
   justify-content: center;
   align-items: center;
 }
+
 .entrogen_item_title {
   color: #9732ed;
 }
+
 .entrogen_item_description {
   width: 800px;
   margin: 50px auto;
   line-height: 35px;
   text-align: justify;
 }
+
 .entrogen_item_description_title {
   text-align: center;
   margin-bottom: 15px;
 }
+
 .entrogen_item_description_text {
   text-align: justify;
 }
+
 .reagent_wrapper {
   margin: 50px auto;
   width: 800px;
 }
+
 .reagent_wrapper_title {
   text-align: center;
 }
+
 .reagent {
   display: flex;
   margin: 20px auto;
   font-size: 13px;
 }
+
 .reagent_container {
   margin: 10px 20px;
   line-height: 1.2rem;
 }
+
 .reagent_container p {
   text-align: justify;
   margin: 10px auto;
 }
+
 .reagent_container_code a {
   width: 150px;
   text-decoration: none;
   display: block;
   margin-top: 10px;
 }
+
 .reagent_container_description h2 {
   text-align: center;
 }
+
 .reagent_container_description p {
   width: 400px;
 }
-@media (max-width: 900px) and (min-width: 100px){
-  
-  .entrogen_item_description{
+
+@media (max-width: 900px) and (min-width: 100px) {
+
+  .entrogen_item_description {
     width: 80%;
     margin: 0 auto;
     margin-top: 16px;
   }
-  .entrogen_item_title{
+
+  .entrogen_item_title {
     font-size: 30px;
   }
-  .reagent_wrapper_title{
+
+  .reagent_wrapper_title {
     font-size: 26px;
   }
+
   .reagent_wrapper {
     width: auto;
     text-align: center;
   }
-  .reagent{
+
+  .reagent {
     flex-direction: column;
   }
-  .reagent_container_description{
+
+  .reagent_container_description {
     text-align: inherit;
   }
-  .reagent_container_description p{
-    
+
+  .reagent_container_description p {
+
     width: 80%;
     line-height: 22.82px;
   }
-  .reagent_container_code a{
+
+  .reagent_container_code a {
     width: auto;
   }
-  .reagent_container_title p{
-    text-align:inherit;
+
+  .reagent_container_title p {
+    text-align: inherit;
   }
 }
 </style>

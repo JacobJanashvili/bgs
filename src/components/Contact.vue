@@ -78,5 +78,10 @@ main {
     margin: 16px 0;
   }
 }
+@media (min-width: 1000px) and (max-width: 1600px){
+  .contact_wrapper{
+    margin-bottom: 100px;
+  }
+}
 
 </style>

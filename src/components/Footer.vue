@@ -57,9 +57,8 @@
 footer {
   background-color: #383838;
   width: 100%;
-  margin-top: 150px;
   color: white;
-  height: 20vh;
+
 }
 
 .footer_content {
@@ -125,12 +124,17 @@ footer {
   footer {
     height: auto;
   }
+
   .footer_title_wrapper {
     margin-bottom: 53px;
   }
-  .first_item, .second_item, .third_item{
+
+  .first_item,
+  .second_item,
+  .third_item {
     margin: 0;
   }
+
   .footer_title_wrapper a h1 {
     font-size: 34px;
   }
@@ -161,6 +165,13 @@ footer {
     margin: auto;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1600px) {
+
+  .footer_items {
+    margin-left: inherit;
   }
 }
 </style>

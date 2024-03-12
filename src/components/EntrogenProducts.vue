@@ -253,7 +253,8 @@ const handleEntrogenProductClick = (product) => {
   width: 100%;
   height: 283px;
   background: linear-gradient(92.45deg, #FBF5FF -3.7%, #FBF5FF 109.09%);
-  margin-top: 93px;
+  margin-top: 80px;
+  margin-bottom: 40px;
   position: relative;
 }
 
@@ -362,6 +363,11 @@ const handleEntrogenProductClick = (product) => {
     position: static;
     width: 100%;
     margin-top: 32px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1600px){
+  .entrogen_deseases{
+    margin-left: 6%;
   }
 }
 </style>

@@ -152,7 +152,9 @@ main {
   margin: auto;
 }
 
-
+.certificate_wrapper{
+  margin-bottom: 40px;
+}
 
 .certificate_subwrapper {
   margin-top: 45px;
@@ -222,7 +224,7 @@ main {
 
 .funnel_img {
   object-fit: cover;
-  margin: 80px 0;
+  margin: 80px auto;
 }
 
 .p-button {
@@ -246,7 +248,7 @@ main {
   .card {
     flex-direction: column;
     width: 90%;
-    margin: 20px;
+    margin-top: 20px;
   }
 
   .card_title {
@@ -272,7 +274,7 @@ main {
 
   .funnel_img {
     width: 100%;
-    margin: 0 auto;
+
   }
 
   .home_catalog_wrapper {
@@ -326,6 +328,32 @@ main {
 
   .catalog_download_wrapper h1 {
     font-size: 25px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1600px) {
+  .card_img {
+    object-fit: cover;
+    object-position: 0;
+    margin: 0;
+  }
+
+  .card_test_wrapper {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+  }
+  .certificate_wrapper{
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .certificate_title{
+    text-align: left;
+    margin-left: 10%;
+  }
+  .certificate_subwrapper img{
+    width: 20%;
   }
 }
 </style>

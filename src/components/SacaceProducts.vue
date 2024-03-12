@@ -289,7 +289,8 @@ const handleVirusClick = (virus) => {
   width: 100%;
   height: 283px;
   background: linear-gradient(92.45deg, #FBF5FF -3.7%, #FBF5FF 109.09%);
-  margin-top: 93px;
+  margin-top: 80px;
+  margin-bottom: 40px;
   position: relative;
 }
 
@@ -367,6 +368,7 @@ const handleVirusClick = (virus) => {
     column-gap: 10px;
     row-gap: 20px;
     margin-top: 27px;
+    overflow: hidden;
   }
 
   .sacace_virus {
@@ -399,7 +401,8 @@ const handleVirusClick = (virus) => {
   }
 
   .sacace_catalog_wrapper {
-    margin-top: 80px;
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 
   .sacace_catalog {
@@ -423,6 +426,12 @@ const handleVirusClick = (virus) => {
 
   .sacace_catalog img {
     width: 90%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1600px) {
+  .sacace_viruses {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 </style>

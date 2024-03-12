@@ -313,6 +313,7 @@ const items = ref([
 }
 
 @media (min-width: 200px) and (max-width: 900px) {
+  
   .p-menubar {
     width: 100%;
     left: 0;
@@ -325,6 +326,14 @@ const items = ref([
 
   .divider {
     display: none;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1600px) {
+  :deep(.p-menubar-root-list){
+    left: 20%;
+  }
+  .header-logo{
+    margin-left: 10%;
   }
 }
 </style>

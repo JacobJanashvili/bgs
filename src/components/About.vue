@@ -145,6 +145,7 @@ onBeforeUnmount(() => {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  margin-bottom: 20px;
 }
 .about_us_mobile_wrapper p{
   font-size: 16px;
@@ -160,8 +161,9 @@ onBeforeUnmount(() => {
 .about_us_mobile_img img{
   width: 100%;
 }
-@media (min-width: 200px) and (max-width: 900px) {
-
-  
+@media (min-width: 1000px) and (max-width: 1600px){
+  .about_us_wrapper{
+    margin-bottom: 40px;
+  }
 }
 </style>
