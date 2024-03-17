@@ -44,14 +44,14 @@ onBeforeUnmount(()=> {
 
 .hero_card_container {
   margin-top: 100px;
-  background: url("../assets/homebcg.png") no-repeat center;
+  background: url("../assets/hero_web.jpg") no-repeat center;
   background-size: cover;
   height: 50vh;
 }
 
 .hero_card_container_mobile {
   margin-top: 100px;
-  background: url("../assets/Hero-mobile-image.jpg") no-repeat center;
+  background: url("../assets/mob_hero.jpg") no-repeat center;
   background-size: cover;
   height: 50vh;
 }
@@ -86,12 +86,12 @@ onBeforeUnmount(()=> {
 
   .hero_text_container {
     width: 300px;
-    color: white;
+    color: #383838;
     margin: 0 auto;
   }
 
   .hero_text_content {
-    color: white;
+    color: #383838;
   }
 
   .p-button {

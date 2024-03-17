@@ -366,8 +366,22 @@ const handleEntrogenProductClick = (product) => {
   }
 }
 @media (min-width: 1000px) and (max-width: 1600px){
+  .about_entrogen_wrapper{
+    width: 100%;
+    margin: 80px auto;
+  }
+  .about_entrogen{
+    height: 100%;
+  }
+  .about_entrogen_text p{
+    width: 500px;
+  }
   .entrogen_deseases{
-    margin-left: 6%;
+    grid-template-columns: repeat(3,1fr);
+    width: 80%;
+    column-gap: 10px;
+    row-gap: 20px;
+    margin: 60px auto;
   }
 }
 </style>

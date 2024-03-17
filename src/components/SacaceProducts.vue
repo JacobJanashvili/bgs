@@ -24,49 +24,50 @@ const viruses = [
     title: 'ჰეპატიტის ვირუსები',
     description: 'ჰეპატიტის ვირუსები წარმოადგენენ ღვიძლის ინფექციური დაავადებების გამომწვევი ვირუსების ჯგუფს. არსებობს 5 ძირითადი ვირუსი, რომელიც იწვევს ჰეპატიტს. ეს ვირუსები, თავის მხრივ, წარმოადგენენ ჰეპატიტის ორ ჯგუფს: ნაწლავური, რომელსაც მიეკუთვნება A და E ჰეპატიტის ვირუსები (HAV და HEV) და პარენტერალური, რომელსაც განეკუთვნება B, C და D ჰეპატიტის ვირუსები (HBV, HCV და HDV). გთავაზობთ Sacace Biotechnologies (იტალია) მიერ წარმოებულ მოლეკულურ-სადიაგნოსტიკო ტესტებს თითოეული ძირითადი ვირუსის გამოვლენისა და მათი რაოდენობრივი და ხარისხობრივი მახასიათებლების განსაზღვრისათვის, RT-PCR-ის (PCR რეალურ დროში) გამოყენებით.',
     image: 'hepatitis.png',
-    pdfLink: "https://www.cdc.gov/hepatitis/resources/professionals/pdfs/abctable.pdf"
+    mobileImage: "Hepatitis-mobile.jpg"
+
   },
   {
     title: 'ადამიანის იმუნოდეფიციტის ვირუსი',
     description: 'აივ ვირუსი რეტროვირუსების ოჯახის წარმომადგენლია, რომელიც აინფიცირებს ადამიანის იმუნურ სისტემას. ხანგრძლივმა ინფექციამ შეიძლება გამოიწვიოს შეძენილი იმუნოდეფიციტის სინდრომი (შიდსი) – მდგომარეობა, რომლის დროსაც იმუნურ სისტემას აღარ გააჩნია ნორმალური ფუნქციონირების უნარი. თავდაცვითი მექანიზმების უკმარისობა იწვევს ოპორტუნისტულ ინფექციებს და ნორმალური იმუნიტეტის არსებობისას უვნებელი ინფექციებიც კი შეიძლება გახდეს სასიკვდილო. გთავაზობთ Sacace Biotechnologies (იტალია) მიერ წარმოებულ მოლეკულურ-სადიაგნოსტიკო ნაკრებებს (კომპლექტებს), რომელთა გამოყენებით შესაძლებელია აივ ვირუსის როგორც რნმ-ის, ასევე დნმ-ის გამოვლენა. ვირუსის რნმ/დნმ-ის გამოვლენა „სეროლოგიური შუალედის“ შემცირების საშუალებას იძლევა, ხოლო PCR-ის, როგორც სადიაგნოსტიკო ინსტრუმენტის, გამოყენება არის შეუცვლელი მეთოდი აივ-ინფიცირებული დედების მიერ დაბადებულ ჩვილებში აივ ინფექციის დიაგნოსტირებისთვის.',
     image: 'hiv.png',
-    pdfLink: "https://www.health.ny.gov/diseases/aids/general/resources/child/docs/chapter_1.pdf"
+    mobileImage: "HIV-mobile.jpg"
   },
   {
     title: 'ადამიანის პაპილომა ვირუსები',
     description: 'საშვილოსნოს ყელის კიბო (CC - Cervical cancer) არის ერთ-ერთი ყველაზე გავრცელებული ონკოლოგიური პათოლოგია, რომელიც ქალებში სიხშირით მეორე ადგილზეა მსოფლიოში. ყოველწლიურად მსოფლიოში დაახლოებით 600 000 ახალი CC შემთხვევა ფიქსირდება 250 000-ზე მეტი ლეტალური შედეგით. ამ კიბოს ვირუსული ბუნება დადასტურებულია ჯანდაცვის მსოფლიო ორგანიზაციის მიერ და აპვ გამოვლენილია საშვილოსნოს ყელის კიბოს წინარე და განვითარებული კიბოს შემთხვევების პრაქტიკულად 100 პროცენტში. იმის გამო, რომ საშვილოსნოს ყელის კიბოს (CC - Cervical cancer) გააჩნია განვითარების ხანგრძლივი პერიოდი და შეუცდომლად დადგენადი პრეკლინიკური ფაზა, არსებობს დაავადების ადრეულ ეტაპზე გამოვლენისა და პრევენციის შესაძლებლობა. გთავაზობთ Sacace Biotechnologies (იტალია) მიერ წარმოებულ მოლეკულური დიაგნოსტიკის ნაკრებებს (კომპლექტებს) როგორც დაბალი რისკის, ასევე მაღალი რისკის აპვ-ების გამოსავლენად',
     image: 'papiloma.png',
-    pdfLink: "https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/hpv.pdf"
+    mobileImage: "HPV-mobile.jpg"
   },
   {
     title: 'სქესობრივი გზით გადამდები დაავადებები',
     description: 'ტერმინი სგგდ (სქესობრივი გზით გადამდები დაავადებები) მოიცავს სხვადასხვა ბაქტერიულ, ვირუსულ და პარაზიტულ ინფექციებს, რომლებიც გადაეცემა სქესობრივი კონტაქტის შედეგად. გავრცელებულ სგგდ-ებს მიეკუთვნება ქლამიდია, გონორეა, ჰერპესი, აივ, აპვ, სიფილისი, გარდნერელა, მიკოპლაზმა და ტრიქომონიაზი. გთავაზობთ Sacace Biotechnologies (იტალია) მიერ წარმოებულ მოლეკულურ-სადიაგნოსტიკო ტესტებს მოცემული პათოგენების გამოსავლენად RT-PCR-ის (PCR რეალურ დროში) გამოყენებით',
     image: 'stv.png',
-    pdfLink: "https://www.prevention.va.gov/docs/mens-health-guide/STIs.pdf"
+    mobileImage: "STV-mobile.jpg"
   },
   {
     title: 'ჰერპეს ვირუსებით გამოწვეული ინფექციები',
     description: 'ჰერპესული ინფექცია არის პირის ღრუსა და სასქესო ორგანოების ირგვლივ კანის ინფექციური დაავადებების კოლექტიური სახელწოდება, რომლებიც გამოწვეულია ჰერპეს ვირუსების სახელწოდებით ცნობილი ვირუსებით. ინფექციის ყველაზე გავრცელებული გამომწვევი აგენტებია: ციტომეგალოვირუსი, ჰერპეს სიმპლექსი (HSV-1 და HSV-2 ჩათვლით), ეპშტეინ-ბარის ვირუსი და ადამიანის ჰერპესის ვირუსები (6, 7 და 8). გთავაზობთ Sacace Biotechnologies (იტალია) მიერ წარმოებულ მოლეკულური დიაგნოსტიკის ნაკრებებს (კომპლექტებს) ყველა ძირითადი ჰერპეს ვირუსის გამოსავლენად RT-PCR-ის (PCR რეალურ დროში) გამოყენებით',
     image: 'herpes.png',
-    pdfLink: "https://www.va.gov/WHOLEHEALTHLIBRARY/docs/Herpes-Simplex-Virus.pdf"
+    mobileImage: "Herpes-mobile.jpg"
   },
   {
     title: '„TORCH ინფექციები“',
     description: '„TORCH ინფექციები“ არის სხვადასხვა მიკრობით გამოწვეული ინფექციური დაავადებების კოლექტიური სახელწოდება. სახელი წარმოადგენს შემდეგი პათოგენების აკრონიმს: ტოქსოპლაზმოზი (T), სხვა (O) (მათ შორის სიფილისი, ჰეპატიტი B), რუბელა (R), ციტომეგალოვირუსი (C) და ჰერპეს სიმპლექსი (H). გთავაზობთ Sacace Biotechnologies (იტალია) მიერ წარმოებულ მოლეკულურ-სადიაგნოსტიკო ტესტებს კლინიკურ ნიმუშებში თითოეული პათოგენის გამოვლენისა და მახასიათებლების განსაზღვრისთვის RT-PCR (PCR რეალურ დროში) გამოყენებით. ',
     image: 'torch.png',
-    pdfLink: "https://poliklinika-harni.hr/images/uploads/360/torch.pdf"
+    mobileImage: "Torch-mobile.jpg"
   },
   {
     title: 'სასუნთქი გზების ინფექციები',
     description: '„რესპირატორული ტრაქტის ინფექციები“ წარმოადგენს ადამიანის სასუნთქი გზების დაავადებების კოლექტიური სახელწოდებას. გამომწვევი აგენტები მოიცავს როგორც ვირუსებს, ასევე ბაქტერიებს. RTI-ინფექციები ზოგადად იყოფა (კლასიფიცირდება) ორ ძირითად ჯგუფად: ზედა ტრაქტის ინფექციები და ქვედა ტრაქტის ინფექციები (ამ უკანასკნელის მაგალითია პნევმონია). გთავაზობთ Sacace Biotechnologies (იტალია) მიერ წარმოებულ მოლეკულურ-სადიაგნოსტიკო ტესტებს გამომწვევი მიკრობების გამოსავლენად RT-PCR-ის (PCR რეალურ დროში) გამოყენებით. ტესტები მოიცავს ნაკრებებს (კომპლექტებს) ყველაზე გავრცელებული გამომწვევი აგენტების, როგორებიცაა გრიპი (ინფლუენცა), კორონავირუსი, Pseudomonas aeruginosa და სხვ., გამოსავლენად.',
-    image: 'tract.png',
-    pdfLink: "https://www.uib.cat/depart/dba/microbiologia/ADSenfcomI/material_archivos/infeccion%20respiratoria.pdf"
+    image: 'Respiratory.png',
+    mobileImage: "Respiratory-mobile.jpg"
   },
   {
     title: 'ტუბერკულოზი',
     description: 'ტუბერკულოზი გავრცელებული და მომაკვდინებელი ინფექციური დაავადებაა, რომელსაც იწვევს მიკობაქტერიები, ძირითადად Mycobacterium tuberculosis. ტუბერკულოზი ყველაზე ხშირად უტევს ფილტვებს, მაგრამ ასევე შეიძლება დააზიანოს ცენტრალური ნერვული სისტემა, ლიმფური სისტემა, სისხლის მიმოქცევის სისტემა, შარდ-სასქესო სისტემა, ძვლები, სახსრები და კანიც კი. ტუბერკულოზის ადრეული დიაგნოსტიკა ეფექტური მკურნალობის საშუალებას იძლევა. გთავაზობთ Sacace Biotechnologies (იტალია) მიერ წარმოებულ მოლეკულურ-სადიაგნოსტიკო ტესტებს კლინიკურ ნიმუშებში Mycobacterium tuberculosis-ის გამოსავლენად და სხვადასხვა ანტიბიოტიკებისადმი რეზისტენტობის მახასიათებლის დასადგენად RT-PCR-ის (PCR რეალურ დროში) გამოყენებით.',
     image: 'TBbacteria.jpg',
-    pdfLink: "https://www.who.int/docs/default-source/documents/tuberculosis/execsumm-11nov2020.pdf?sfvrsn=e1d925f_4"
+    mobileImage: "Tuberculosis-mobile.jpg"
   },
   {
     title: 'სალმონელას ინფექციები',
@@ -76,30 +77,25 @@ const viruses = [
       '' +
       '          პაციენტები შეიძლება გამოჯანმრთელდნენ ანტიბიოტიკების გამოყენების გარეშე. ანტიბიოტიკები რეკომენდებულია ძალიან დაავადებული პაციენტებისთვის. ინდივიდების მცირე პროცენტს შეიძლება განუვითარდეს ქრონიკული მატარებელი მდგომარეობა; ისინი ასიმპტომურია, მაგრამ გამოიყოფა სალმონელა განავალში ერთი წლის ან მეტი ხნის განმავლობაში.',
     image: 'salmonella.jpg',
-    pdfLink: "https://www.cdc.gov/salmonella/pdf/cdc-salmonella-factsheet.pdf"
+    mobileImage: "Salmonella-mobile.jpg"
   },
   {
     title: 'მოლეკულური გენეტიკა',
     description: 'მოლეკულური გენეტიკა არის ბიოლოგიის ქვედარგი, რომელიც განიხილავს, თუ როგორ ვლინდება განსხვავებები დნმ-ის მოლეკულების სტრუქტურებში ან გამოხატულებაში, როგორც ცვალებადობა ორგანიზმებს შორის. მოლეკულური გენეტიკა ხშირად იყენებს „გამოძიების მიდგომას“ ორგანიზმის გენომში გენების სტრუქტურისა და/ან ფუნქციის დასადგენად გენეტიკური ეკრანის გამოყენებით კვლევის სფერო ეფუძნება ბიოლოგიის რამდენიმე ქვედარგის შერწყმას: კლასიკური მენდელის მემკვიდრეობა , უჯრედული ბიოლოგია , მოლეკულური ბიოლოგია , ბიოქიმია და ბიოტექნოლოგია. მკვლევარები ეძებენ მუტაციებს გენში ან იწვევენ მუტაციებს გენში, რათა დააკავშირონ გენის თანმიმდევრობა კონკრეტულ ფენოტიპთან. მოლეკულური გენეტიკა მძლავრი მეთოდოლოგიაა მუტაციების გენეტიკურ პირობებთან დასაკავშირებლად, რაც ხელს შეუწყობს სხვადასხვა გენეტიკური დაავადების მკურნალობის/განკურნების ძიებას.',
     image: 'Molecule.jpg',
-    pdfLink: "https://cbcd.bbk.ac.uk/sites/default/files/cbcd/files/interlearn/McQuilin_INTRODUCTION%20TO%20MOLECULAR%20GENETICS%2022%20Sept%202017.pdf"
+    mobileImage: "Molecular-mobile.jpg"
   },
   {
     title: 'ნევროლოგიური ინფექციები',
     image: 'Neurological-disorders.jpg',
-    pdfLink: "https://www.rcpe.ac.uk/journal/issue/journal_36_4/CME_infections.pdf"
+    mobileImage: "Neurological-mobile.jpg"
   },
   {
     title: 'ნაწლავური და პარაზიტული ინფექციები',
     description: 'მწვავე ნაწლავური ინფექციები (A.I.I) არის ინფექციური დაავადებების განყოფილებებში ჰოსპიტალიზაციის ერთ-ერთი მთავარი მიზეზი. თანამედროვე ლიტერატურით მოწოდებული მონაცემების მიხედვით შემდეგი ბაქტერიული და ვირუსული აგენტები არის AII-ის ყველაზე ხშირად გამოვლენილი და ზოგადად გავრცელებული ეტიოლოგიური აგენტები',
     image: 'Intestines.jpg',
-    pdfLink: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC358167/pdf/cmr00049-0049.pdf"
+    mobileImage: "Intestines-mobile.jpg"
   },
-  {
-    title: 'საშიში ინფექციები',
-    image: 'biolfilm_pseudomonas.jpg',
-    pdfLink: "https://www.cdc.gov/ncezid/pdf/two-pagers/ncezid-deadly-unexplained-2pgr-h.pdf"
-  }
 ]
 const handleVirusClick = (virus) => {
   store.commit('setVirusData', virus)
@@ -134,7 +130,8 @@ const handleVirusClick = (virus) => {
   <div class="sacace_viruses">
     <div v-for="virus in viruses" class="sacace_virus" @click="handleVirusClick(virus)">
       <div class="sacace_virus_subwrapper">
-        <img :src="virus.image" alt="">
+        <img :src="virus.image" alt="img" v-if="windowWidth > 900">
+        <img :src="virus.mobileImage" alt="img" v-if="windowWidth < 900">
         <p class="sacace_virus_title">{{ virus.title }}</p>
       </div>
       <p class="sacace_virus_description">
@@ -237,11 +234,11 @@ const handleVirusClick = (virus) => {
 .sacace_viruses {
 
   margin-top: 60px;
-  padding: 0 150px;
+  padding: 0 20%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  row-gap: 30px;
-  column-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
   place-content: center;
 
 }
@@ -260,7 +257,6 @@ const handleVirusClick = (virus) => {
 .sacace_virus_subwrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .sacace_virus_subwrapper img {
@@ -374,30 +370,24 @@ const handleVirusClick = (virus) => {
   .sacace_virus {
     width: 184px;
     height: 343px;
-
+    padding: 0;
   }
 
   .sacace_virus_subwrapper {
     flex-direction: column;
 
   }
-
-  .sacace_virus img {
-    width: 164px;
-    height: 77px;
-    object-fit: cover;
-  }
-
-
   .sacace_virus_title {
     font-size: 16px;
     font-weight: 700;
-    margin-top: 3px;
+    padding: 10px;
   }
 
   .sacace_virus_description {
     -webkit-line-clamp: 5;
     line-height: 22.61px;
+    width: 164px;
+    margin: 0 auto;
   }
 
   .sacace_catalog_wrapper {

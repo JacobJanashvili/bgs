@@ -65,7 +65,7 @@ const certificateList = [
         </div>
       </div>
     </div>
-    <img class="funnel_img" src="../assets/sixreasons-en.png" alt="" />
+    <img class="funnel_img" src="../assets/6-reason.jpg" alt="" />
     <div v-if="windowWidth > 900" class="certificate_wrapper">
       <h2 class="certificate_title">სერტიფიკატები</h2>
       <div class="certificate_subwrapper">
@@ -152,7 +152,7 @@ main {
   margin: auto;
 }
 
-.certificate_wrapper{
+.certificate_wrapper {
   margin-bottom: 40px;
 }
 
@@ -223,6 +223,7 @@ main {
 }
 
 .funnel_img {
+  width: 50%;
   object-fit: cover;
   margin: 80px auto;
 }
@@ -243,12 +244,17 @@ main {
 @media (min-width: 100px) and (max-width: 900px) {
   .motivator_wrapper {
     flex-direction: column;
+    margin: 20px auto;
   }
 
   .card {
     flex-direction: column;
     width: 90%;
-    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card_img {
+    margin: 0;
   }
 
   .card_title {
@@ -274,7 +280,7 @@ main {
 
   .funnel_img {
     width: 100%;
-
+    height: auto;
   }
 
   .home_catalog_wrapper {
@@ -344,15 +350,18 @@ main {
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
   }
-  .certificate_wrapper{
+
+  .certificate_wrapper {
     margin-bottom: 40px;
     text-align: center;
   }
-  .certificate_title{
+
+  .certificate_title {
     text-align: left;
     margin-left: 10%;
   }
-  .certificate_subwrapper img{
+
+  .certificate_subwrapper img {
     width: 20%;
   }
 }
