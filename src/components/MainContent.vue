@@ -77,7 +77,7 @@ const certificateList = [
       </div>
     </div>
   </main>
-  <CallPhoneButton />
+  <CallPhoneButton v-if="windowWidth < 900"/>
   <Footer />
 </template>
 
