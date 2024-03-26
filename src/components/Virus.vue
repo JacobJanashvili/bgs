@@ -1,8 +1,23 @@
 <script setup>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import { onMounted, ref } from "vue";
+import { onMounted, ref, onBeforeUnmount, nextTick } from "vue";
 import store from "@/store";
+import CallPhoneButton from "./CallPhoneButton.vue";
+let windowWidth = window.innerWidth
+
+const onResize = () => {
+  windowWidth = window.innerWidth
+}
+onMounted(() => {
+  nextTick(() => {
+    window.addEventListener('resize', onResize)
+
+  })
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', onResize)
+})
 const hepatitisToggled = ref(false);
 const hivToggled = ref(false);
 const hpvToggled = ref(false);
@@ -1890,6 +1905,7 @@ onMounted(() => {
       </div>
     </div>
   </main>
+  <CallPhoneButton v-if="windowWidth < 900"/>
   <Footer />
 </template>
 

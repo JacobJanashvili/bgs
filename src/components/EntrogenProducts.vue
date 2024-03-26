@@ -6,6 +6,7 @@ import store from "../store";
 import router from "../router";
 import { onMounted, nextTick, onBeforeUnmount } from "vue"
 import EntrogenPDf from "@/assets/ENTROGEN-Brochure.pdf"
+import CallPhoneButton from "./CallPhoneButton.vue";
 
 let windowWidth = window.innerWidth
 
@@ -126,6 +127,7 @@ const handleEntrogenProductClick = (product) => {
       </div>
     </div>
   </div>
+  <CallPhoneButton v-if="windowWidth < 900"/>
   <Footer />
 </template>
 

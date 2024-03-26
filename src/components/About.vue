@@ -2,6 +2,7 @@
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import { onMounted, nextTick, onBeforeUnmount } from "vue"
+import CallPhoneButton from "./CallPhoneButton.vue";
 
 let windowWidth = window.innerWidth
 
@@ -67,6 +68,7 @@ onBeforeUnmount(() => {
       ეტაპი ხორციელდება ISO 13485:2016 ხარისხის მართვის სისტემის მოთხოვნის მიხედვით.
     </p>
   </div>
+  <CallPhoneButton v-if="windowWidth < 900" />
   <Footer />
 </template>
 
@@ -108,7 +110,7 @@ onBeforeUnmount(() => {
   display: flex;
   justify-content: center;
   margin-top: 80px;
-
+  margin-bottom: 60px;
 }
 
 .about_us_img {

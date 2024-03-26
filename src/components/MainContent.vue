@@ -5,6 +5,7 @@ import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import EntrogenPDf from "@/assets/ENTROGEN-Brochure.pdf"
 import { onMounted, nextTick } from "vue"
+import CallPhoneButton from "./CallPhoneButton.vue";
 let windowWidth = window.innerWidth
 
 const onResize = () => {
@@ -76,6 +77,7 @@ const certificateList = [
       </div>
     </div>
   </main>
+  <CallPhoneButton />
   <Footer />
 </template>
 

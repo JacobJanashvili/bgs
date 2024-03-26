@@ -5,6 +5,7 @@ import Button from "primevue/button";
 import store from "../store";
 import router from "../router";
 import { onMounted, nextTick, onBeforeUnmount } from "vue"
+import CallPhoneButton from "./CallPhoneButton.vue";
 let windowWidth = window.innerWidth
 
 const onResize = () => {
@@ -160,7 +161,7 @@ const handleVirusClick = (virus) => {
       </div>
     </div>
   </div>
-
+  <CallPhoneButton v-if="windowWidth < 900" />
   <Footer />
 </template>
 
@@ -377,6 +378,7 @@ const handleVirusClick = (virus) => {
     flex-direction: column;
 
   }
+
   .sacace_virus_title {
     font-size: 16px;
     font-weight: 700;

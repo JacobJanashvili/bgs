@@ -23,7 +23,6 @@
           <h3>უკუკავშირი</h3>
           <div class="second_item_text">
             <p>(+995) 599 74 00 44</p>
-            <p>(+995) 579 22 01 56</p>
             <p>info@bgs.ge</p>
           </div>
         </div>
@@ -63,7 +62,7 @@ footer {
 
 .footer_content {
   display: flex;
-  padding: 50px 5px 0 100px;
+  padding: 50px 5px 20px 100px;
 
 }
 

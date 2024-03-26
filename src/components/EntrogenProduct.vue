@@ -1,13 +1,26 @@
 <script setup>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import { onMounted, ref } from "vue";
+import { onMounted, ref, onBeforeUnmount } from "vue";
 import store from "@/store";
+import CallPhoneButton from "./CallPhoneButton.vue";
+let windowWidth = window.innerWidth
+
+const onResize = () => {
+  windowWidth = window.innerWidth
+}
+onMounted(() => {
+  nextTick(() => {
+    window.addEventListener('resize', onResize)
+
+  })
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', onResize)
+})
 const entrogenData = store.state.entrogenData;
 const { title, description } = entrogenData;
-onMounted(() => {
-  console.log(title);
-});
+
 const colorectalCancerType = [
   {
     title: "KRAS/BRAF მუტაციის ანალიზის ნაკრები",
@@ -413,6 +426,7 @@ EntroGen RNA Fusion Gene Panel არის სრული რნმ-ის ა
       </div>
     </template>
   </div>
+  <CallPhoneButton v-if="windowWidth < 900" />
   <Footer />
 </template>
 <style>

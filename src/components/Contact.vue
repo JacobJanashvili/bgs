@@ -1,6 +1,20 @@
 <script setup>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import CallPhoneButton from "./CallPhoneButton.vue";
+let windowWidth = window.innerWidth
+
+const onResize = () => {
+  windowWidth = window.innerWidth
+}
+onMounted(() => {
+  nextTick(() => {
+    window.addEventListener('resize', onResize)
+  })
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', onResize)
+})
 </script>
 
 <template>
@@ -30,6 +44,7 @@ import Footer from "@/components/Footer.vue";
       </div>
     </div>
   </main>
+  <CallPhoneButton v-if="windowWidth < 900"/>
   <Footer />
 </template>
 
@@ -49,6 +64,7 @@ main {
   margin-top: 50px;
   display: flex;
   align-items: center;
+  margin-bottom: 150px
 }
 .mail_wrapper {
   display: flex;

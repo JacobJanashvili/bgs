@@ -75,7 +75,7 @@ const items = ref([
   //   label: 'სიახლეები'
   // },
   {
-    label: 'უკუკავშირი',
+    label: 'კონტაქტი',
     to: '/contact-us'
   }
 ])
@@ -95,23 +95,10 @@ const items = ref([
           <img src="@/assets/phone-icon.svg" alt="">
           <p>(+995) 599 74 00 44</p>
         </div>
-        <div class="contact_sub_wrapper">
-          <img src="@/assets/phone-icon.svg" alt="">
-          <p>(+995) 579 22 01 56</p>
-        </div>
-        <div class="divider"></div>
-        <div class="language-picker">
-          <div class="selected-language" @click="toggleDropdown">
+        
+          <!-- <div class="selected-language">
             {{ selectedLanguage }}
-            <!-- <i class="arrow-icon" :class="isDropdownOpen ? 'fas fa-chevron-up' : 'fas fa-chevron-down'"></i> -->
-            <ul class="dropdown-menu" v-if="isDropdownOpen">
-              <li v-for="language in otherLanguages" :key="language" @click="changeLanguage(language)">
-                {{ language }}
-              </li>
-            </ul>
-          </div>
-
-        </div>
+          </div> -->
       </div>
     </template>
   </Menubar>
@@ -283,7 +270,7 @@ const items = ref([
 .selected-language {
   display: flex;
   align-items: center;
-  
+
 }
 
 .arrow-icon {
@@ -313,7 +300,7 @@ const items = ref([
 }
 
 @media (min-width: 200px) and (max-width: 900px) {
-  
+
   .p-menubar {
     width: 100%;
     left: 0;
@@ -328,11 +315,13 @@ const items = ref([
     display: none;
   }
 }
+
 @media (min-width: 1000px) and (max-width: 1600px) {
-  :deep(.p-menubar-root-list){
+  :deep(.p-menubar-root-list) {
     left: 20%;
   }
-  .header-logo{
+
+  .header-logo {
     margin-left: 10%;
   }
 }
