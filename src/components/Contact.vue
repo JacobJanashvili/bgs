@@ -2,6 +2,7 @@
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import CallPhoneButton from "./CallPhoneButton.vue";
+import { onMounted, onBeforeUnmount, nextTick } from 'vue'
 let windowWidth = window.innerWidth
 
 const onResize = () => {
